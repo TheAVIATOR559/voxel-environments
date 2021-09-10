@@ -2,17 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlockType : MonoBehaviour
+[System.Serializable]
+public class BlockType
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string blockName;
+    public bool isSolid;
 
-    // Update is called once per frame
-    void Update()
+    [Header("Texture Values")]
+    public int backTexture;
+    public int frontTexture;
+    public int topTexture;
+    public int bottomTexture;
+    public int leftTexture;
+    public int rightTexture;
+
+    //BACK, FRONT, TOP, BOTTOM, LEFT, RIGHT
+    public int GetTextureID(int faceIndex)
     {
-        
+        switch(faceIndex)
+        {
+            case 0:
+                return backTexture;
+            case 1:
+                return frontTexture;
+            case 2:
+                return topTexture;
+            case 3:
+                return bottomTexture;
+            case 4:
+                return leftTexture;
+            case 5:
+                return rightTexture;
+            default:
+                Debug.LogError("ERROR IN GetTextureID; INVALID FACE INDEX");
+                return 0;
+        }
     }
 }

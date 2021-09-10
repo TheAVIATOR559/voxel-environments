@@ -1,0 +1,462 @@
+Using pre-set license
+Built from '2020.2/staging' branch; Version is '2020.2.7f1 (c53830e277f1) revision 12924976'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1165; Version 2009; 64bit' Language: 'en' Physical Memory: 16328 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\2020.2.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/GitHub/voxel-environments/Voxel Environments
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+63141
+Successfully changed project path to: D:/GitHub/voxel-environments/Voxel Environments
+D:/GitHub/voxel-environments/Voxel Environments
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 46.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.7f1 (c53830e277f1)
+[Subsystems] Discovering subsystems at path D:/2020.2.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/GitHub/voxel-environments/Voxel Environments/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Vendor:   
+    VRAM:     8079 MB
+    Driver:   30.0.14.7196
+Initialize mono
+Mono path[0] = 'D:/2020.2.7f1/Editor/Data/Managed'
+Mono path[1] = 'D:/2020.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/2020.2.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56528
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/2020.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001166 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 44.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.005 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001459 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 47.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.086 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2453 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.3 MB.
+System memory in use after: 110.1 MB.
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 2863.
+Total: 22.791100 ms (FindLiveObjects: 0.927900 ms CreateObjectMapping: 0.302300 ms MarkObjects: 19.473700 ms  DeleteObjects: 2.085200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac2807d47d19bc5b7a5ca63bb0471088') in 0.053850 seconds
+  Import took 0.060936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 71.247395 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e685fd154a572378891b203f19c7f9bb') in 0.003064 seconds
+  Import took 0.009039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 87.122074 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '921870f403fffcb65e1e58dcf41d44fe') in 0.003749 seconds
+  Import took 0.011340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.322910 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '759a3ec34a30f936db4656ef34c5dbb7') in 0.003679 seconds
+  Import took 0.010042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.477163 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac320f4e2fa93d9a0715721e674dd82c') in 0.004919 seconds
+  Import took 0.010629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.271749 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0f3f1b22b90aa35c259fc7d7d57a1d') in 0.003539 seconds
+  Import took 0.010455 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 250.225576 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b26cb4718f8a78a0c1927a9c6700113') in 0.002297 seconds
+  Import took 0.008781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.555013 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '387306b1d90d3c7b15f1064fa20c6155') in 0.004738 seconds
+  Import took 0.010207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 188.423298 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7e808527ac3fa9c6ca222a90cfaa3b0') in 0.004089 seconds
+  Import took 0.009349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.878186 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd05367d412ff7e31fa84a75236a22dc') in 0.002788 seconds
+  Import took 0.010099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 64.395965 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34ba4b01a77080d1ebcbaa21bbf0e7cf') in 0.005027 seconds
+  Import took 0.013660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.905159 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d03741d154613235b89e959f883622') in 0.002403 seconds
+  Import took 0.008307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000880 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d03741d154613235b89e959f883622') in 0.002883 seconds
+  Import took 0.008262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.984083 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8c3b21971b61c050ba892d20990ede7') in 0.004644 seconds
+  Import took 0.009805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 91.690811 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dde8db6e0edfff684aa48f977ea6cda') in 0.005147 seconds
+  Import took 0.009859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.008273 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad47711f3637d81502db7e961ee0e947') in 0.003672 seconds
+  Import took 0.009702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.454175 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00118bd1226187a95a3721012066a9b2') in 0.003536 seconds
+  Import took 0.008810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037378 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00118bd1226187a95a3721012066a9b2') in 0.004088 seconds
+  Import took 0.010945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 109.920916 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a20873c73300f810865ddd09db6ed524') in 0.003374 seconds
+  Import took 0.012733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.175137 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d5ce36b4ed2000ac8ce1d16d49b289b') in 0.004771 seconds
+  Import took 0.008932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.688810 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4509a5b0461bb7e767d13f6e8027955c') in 0.021660 seconds
+  Import took 0.037359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 159.102214 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57a2af2cdc8390510f75291e88fc1e4c') in 0.004943 seconds
+  Import took 0.012226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.495593 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cd6e1d838a4d6b517b39bad035fdac6') in 0.005031 seconds
+  Import took 0.011035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.112958 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65e3e3e88a1e82d2b6145349fc3c7378') in 0.004931 seconds
+  Import took 0.009540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.840640 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef72c61703008dcba332efc58fc90570') in 0.006356 seconds
+  Import took 0.012739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.206127 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f963654f394ba1e89c2ab09056aa1e24') in 0.005032 seconds
+  Import took 0.010462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.242206 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c5c8335015db485b83a15636f827538') in 0.003945 seconds
+  Import took 0.009619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.934139 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '447ab51996eee09a2ac35130ea1d1158') in 0.008020 seconds
+  Import took 0.013110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 119.959652 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '261b0676f55339d7d157c71aefabeb03') in 0.003116 seconds
+  Import took 0.012366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 150.398885 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db39f18b549d9266cf86bab55038b4bf') in 0.002376 seconds
+  Import took 0.008904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.552540 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48d58521dd0cbea6288d886f514698ff') in 0.002207 seconds
+  Import took 0.007224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 84.179435 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aab069af7b024699841b55e112bbb85') in 0.004584 seconds
+  Import took 0.010724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.499829 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e452aeb41e624a0ee11cf374a4d25ee1') in 0.003762 seconds
+  Import took 0.009206 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.935643 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f4bb35c473e242fa58b54baf2e887b5') in 0.003613 seconds
+  Import took 0.011476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 76.822306 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27573f3083e734070420c5df86a10de') in 0.004681 seconds
+  Import took 0.012608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.470676 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87204275dd1e29c1b26029a4ffa6e3d') in 0.002432 seconds
+  Import took 0.010334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.170641 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '348d5e9ad6824c2825d86db46bb2fa52') in 0.003900 seconds
+  Import took 0.009376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.549422 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a39bd85a54e0ac2db4f37a4f64df005') in 0.008205 seconds
+  Import took 0.013341 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.218859 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1050e646b2279c95395baf5b4f185d10') in 0.007208 seconds
+  Import took 0.011707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.200322 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4f02176482a8cdb52f54810dda5bfde') in 0.007093 seconds
+  Import took 0.016476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.371267 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001725 seconds
+  ERROR: Build asset version error: assets/scripts/world.cs in SourceAssetDB has modification time of '2021-09-09T21:46:48.2739203Z' while content on disk has modification time of '2021-09-09T21:46:48.4776084Z'
+  Import took 0.012203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035280 seconds.
+  path: Assets/Scripts/World.cs
+  artifactKey: Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/World.cs using Guid(1f20426be0bbd8a47bc36e9b40170adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e70d2c17968554a1084c5a8212976ae8') in 0.019816 seconds
+  Import took 0.031262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.378732 seconds.
+  path: Assets/Scripts/BiomeAttributes.cs
+  artifactKey: Guid(61db5589bd3515249a9b4080cf154900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BiomeAttributes.cs using Guid(61db5589bd3515249a9b4080cf154900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b314bdbe89c7154a35dc97c01b178e') in 0.010536 seconds
+  Import took 0.016404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.700024 seconds.
+  path: Assets/Scripts/BiomeAttributes.cs
+  artifactKey: Guid(61db5589bd3515249a9b4080cf154900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BiomeAttributes.cs using Guid(61db5589bd3515249a9b4080cf154900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de1ad9a53e4a0a260c9f0694fa357407') in 0.003184 seconds
+  Import took 0.007811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 371.508140 seconds.
+  path: Assets/Textures/textures.png
+  artifactKey: Guid(259e1a56fdff14049bb8a5fd232327f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/textures.png using Guid(259e1a56fdff14049bb8a5fd232327f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b228095faf02e4bed1ba238ed2b835d8') in 0.129183 seconds
+  Import took 0.136059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 649.730035 seconds.
+  path: Assets/Textures/textures.png
+  artifactKey: Guid(259e1a56fdff14049bb8a5fd232327f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/textures.png using Guid(259e1a56fdff14049bb8a5fd232327f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b068c9fb721978a76592bcccc6754f82') in 0.027280 seconds
+  Import took 0.033947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3568.561532 seconds.
+  path: Assets/Scripts/BiomeAttributes.cs
+  artifactKey: Guid(61db5589bd3515249a9b4080cf154900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BiomeAttributes.cs using Guid(61db5589bd3515249a9b4080cf154900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '885f29f19ecb3b2d7bb157ec2139dbdd') in 0.008601 seconds
+  Import took 0.013180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 115.691606 seconds.
+  path: Assets/Scripts/BiomeAttributes.cs
+  artifactKey: Guid(61db5589bd3515249a9b4080cf154900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BiomeAttributes.cs using Guid(61db5589bd3515249a9b4080cf154900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5640f18febc53817e43a11be7d7a6de') in 0.006025 seconds
+  Import took 0.011029 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
