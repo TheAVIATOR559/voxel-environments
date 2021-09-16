@@ -4,19 +4,31 @@ using UnityEngine;
 
 public class World : MonoBehaviour
 {
-    public int seed;
+    public int Seed;
     public BiomeAttributes biome;
 
     public Material mat;
-    public BlockType[] blockTypes;
+    public List<BlockType> blockTypes;
 
     private Chunk[,] chunks = new Chunk[VoxelData.WorldSizeInChunks, VoxelData.WorldSizeInChunks];
 
-    List<Vector2Int> chunksToCreate = new List<Vector2Int>();
-
     private void Start()
     {
-        Random.InitState(seed);
+        blockTypes.Sort((x, y) => x.Type.CompareTo(y.Type));
+
+        GenerateWorld();
+    }
+
+    public void RegenWorld()
+    {
+        foreach(Transform child in transform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        chunks = new Chunk[VoxelData.WorldSizeInChunks, VoxelData.WorldSizeInChunks];
+
+        blockTypes.Sort((x, y) => x.Type.CompareTo(y.Type));
 
         GenerateWorld();
     }
@@ -55,44 +67,12 @@ public class World : MonoBehaviour
             return blockTypes[chunks[thisChunk.x, thisChunk.y].GetVoxelFromGlobalVector3(pos)].isSolid;
         }
 
-        return blockTypes[GetVoxel(pos)].isSolid;
+        return blockTypes[CreateVoxel(pos)].isSolid;
     }
 
-    public byte GetVoxel(Vector3 pos)
+    public byte CreateVoxel(Vector3 pos)
     {
-        int yPos = Mathf.FloorToInt(pos.y);
-
-        if(!IsVoxelInWorld(pos))
-        {
-            return 0;//empty block
-        }
-
-        if(yPos == 0)
-        {
-            return 1;//bedrock
-        }
-
-        int terrainHeight = Mathf.FloorToInt(biome.terrainHeight * Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 0, biome.terrainScale)) + biome.solidGroundHeight;
-        byte voxelValue = 0;
-
-        if(yPos == terrainHeight)
-        {
-            voxelValue = 4;//grass
-        }
-        else if(yPos < terrainHeight && yPos > biome.stoneHeight)//btwn grass and stone
-        {
-            voxelValue = 3;//dirt
-        }
-        else if(yPos > terrainHeight)//above ground
-        {
-            return 0;//air
-        }
-        else
-        {
-            return 2;//stone, ores, other underground stuff
-        }
-
-        return voxelValue;
+        return biome.CreateBiomeSpecificVoxel(pos, Seed);
     }
 
     private bool IsChunkInWorld(Vector2Int pos)
@@ -108,7 +88,7 @@ public class World : MonoBehaviour
         }
     }
 
-    private bool IsVoxelInWorld(Vector3 pos)
+    public static bool IsVoxelInWorld(Vector3 pos)
     {
         if (pos.x >= 0 && pos.x < VoxelData.WorldSizeInVoxels
             && pos.y >= 0 && pos.y < VoxelData.ChunkHeight

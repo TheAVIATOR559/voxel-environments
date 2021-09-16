@@ -2,10 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class BlockType
+public enum BlockTypes : byte
 {
-    public string blockName;
+    Air,
+    Bedrock,
+    Stone,
+    Dirt,
+    Grass,
+    Iron_Ore,
+    Silver_Ore,
+    Gold_Ore,
+    Sand,
+    Sandstone,
+    Mesa,
+    Saltflat,
+    Tiaga_Dirt,
+    Tiaga_Grass,
+    Permafrost
+}
+
+[CreateAssetMenu(fileName = "Block", menuName = "Block Type")]
+public class BlockType : ScriptableObject
+{
+    public BlockTypes Type;
     public bool isSolid;
 
     [Header("Texture Values")]
@@ -15,6 +34,11 @@ public class BlockType
     public int bottomTexture;
     public int leftTexture;
     public int rightTexture;
+
+    public string GetName()
+    {
+        return Type.ToString();
+    }
 
     //BACK, FRONT, TOP, BOTTOM, LEFT, RIGHT
     public int GetTextureID(int faceIndex)

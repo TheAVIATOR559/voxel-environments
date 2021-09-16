@@ -58,6 +58,12 @@ public class Chunk
         }
     }
 
+    ~Chunk()
+    {
+        ClearMeshData();
+        //Debug.Log("destroying chunk");
+    }
+
     public void Init()
     {
         chunkObj = new GameObject();
@@ -82,7 +88,7 @@ public class Chunk
             {
                 for(int z = 0; z < VoxelData.ChunkWidth; z++)
                 {
-                    voxelMap[x, y, z] = m_world.GetVoxel(new Vector3(x, y, z) + Position);
+                    voxelMap[x, y, z] = m_world.CreateVoxel(new Vector3(x, y, z) + Position);
                 }
             }
         }

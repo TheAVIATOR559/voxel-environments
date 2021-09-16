@@ -15,5 +15,6 @@ MonoBehaviour:
   biomeName: Default
   solidGroundHeight: 20
   terrainHeight: 20
+  upperSoilDepth: 3
+  middleSoilDepth: 3
   terrainScale: 0.25
-  stoneHeight: 16

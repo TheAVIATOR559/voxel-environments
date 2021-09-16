@@ -373,6 +373,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
+--- !u!1 &326532248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 326532250}
+  - component: {fileID: 326532249}
+  m_Layer: 0
+  m_Name: DEV TOOLS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &326532249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326532248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e665118326fc516448455c732466db80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RegenWorldKey: 116
+  world: {fileID: 1052959217}
+--- !u!4 &326532250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326532248}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.401655, y: 59.47093, z: -14.089971}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1052959215
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,135 +461,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f20426be0bbd8a47bc36e9b40170adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seed: 0
-  biome: {fileID: 11400000, guid: 65ba2a83c8c078e4287b891b6243fb91, type: 2}
+  Seed: 0
+  biome: {fileID: 11400000, guid: 103bdc65bd94ca84286e1a8b455ee9c4, type: 2}
   mat: {fileID: 2100000, guid: 75a5335e095ea09478dc26fc8a4a2929, type: 2}
   blockTypes:
-  - blockName: Air
-    isSolid: 0
-    backTexture: 0
-    frontTexture: 0
-    topTexture: 0
-    bottomTexture: 0
-    leftTexture: 0
-    rightTexture: 0
-  - blockName: Bedrock
-    isSolid: 1
-    backTexture: 0
-    frontTexture: 0
-    topTexture: 0
-    bottomTexture: 0
-    leftTexture: 0
-    rightTexture: 0
-  - blockName: Stone
-    isSolid: 1
-    backTexture: 1
-    frontTexture: 1
-    topTexture: 1
-    bottomTexture: 1
-    leftTexture: 1
-    rightTexture: 1
-  - blockName: Dirt
-    isSolid: 1
-    backTexture: 2
-    frontTexture: 2
-    topTexture: 2
-    bottomTexture: 2
-    leftTexture: 2
-    rightTexture: 2
-  - blockName: Grass
-    isSolid: 1
-    backTexture: 3
-    frontTexture: 3
-    topTexture: 4
-    bottomTexture: 2
-    leftTexture: 3
-    rightTexture: 3
-  - blockName: Sand
-    isSolid: 1
-    backTexture: 5
-    frontTexture: 5
-    topTexture: 5
-    bottomTexture: 5
-    leftTexture: 5
-    rightTexture: 5
-  - blockName: Sandstone
-    isSolid: 1
-    backTexture: 6
-    frontTexture: 6
-    topTexture: 6
-    bottomTexture: 6
-    leftTexture: 6
-    rightTexture: 6
-  - blockName: Iron Ore
-    isSolid: 1
-    backTexture: 7
-    frontTexture: 7
-    topTexture: 7
-    bottomTexture: 7
-    leftTexture: 7
-    rightTexture: 7
-  - blockName: Gold Ore
-    isSolid: 1
-    backTexture: 8
-    frontTexture: 8
-    topTexture: 8
-    bottomTexture: 8
-    leftTexture: 8
-    rightTexture: 8
-  - blockName: Silver Ore
-    isSolid: 1
-    backTexture: 9
-    frontTexture: 9
-    topTexture: 9
-    bottomTexture: 9
-    leftTexture: 9
-    rightTexture: 9
-  - blockName: Light Wood
-    isSolid: 1
-    backTexture: 10
-    frontTexture: 10
-    topTexture: 10
-    bottomTexture: 10
-    leftTexture: 10
-    rightTexture: 10
-  - blockName: Oak Wood
-    isSolid: 1
-    backTexture: 11
-    frontTexture: 11
-    topTexture: 11
-    bottomTexture: 11
-    leftTexture: 11
-    rightTexture: 11
-  - blockName: Dark Wood
-    isSolid: 1
-    backTexture: 12
-    frontTexture: 12
-    topTexture: 12
-    bottomTexture: 12
-    leftTexture: 12
-    rightTexture: 12
-  - blockName: Clay
-    isSolid: 1
-    backTexture: 13
-    frontTexture: 13
-    topTexture: 13
-    bottomTexture: 13
-    leftTexture: 13
-    rightTexture: 13
-  - blockName: Fired Clay
-    isSolid: 1
-    backTexture: 14
-    frontTexture: 14
-    topTexture: 14
-    bottomTexture: 14
-    leftTexture: 14
-    rightTexture: 14
-  - blockName: Burnt Clay
-    isSolid: 1
-    backTexture: 15
-    frontTexture: 15
-    topTexture: 15
-    bottomTexture: 15
-    leftTexture: 15
-    rightTexture: 15
+  - {fileID: 11400000, guid: 816b5330305b8f44f80745591ee59c31, type: 2}
+  - {fileID: 11400000, guid: 417591fcdb184a246a8f62fe27160f9c, type: 2}
+  - {fileID: 11400000, guid: 667d67c844fff104da37dd60e7b7b9e0, type: 2}
+  - {fileID: 11400000, guid: ff2b01be7395a1d488cd12606c98b694, type: 2}
+  - {fileID: 11400000, guid: 0b69ce2c9cd841743bf1f303629f30d5, type: 2}
+  - {fileID: 11400000, guid: 7b19370eb3ab2f442a788614ee4db614, type: 2}
+  - {fileID: 11400000, guid: d6693331bce92a745b98b3c249b5ae61, type: 2}
+  - {fileID: 11400000, guid: 96f151e28634c0f44a86ef57f9b8e824, type: 2}
+  - {fileID: 11400000, guid: 492281a81d3e8cb4299bb57958cd10ea, type: 2}
+  - {fileID: 11400000, guid: 9b00034a2ad287e4fbc99f903b5c2ef7, type: 2}
+  - {fileID: 11400000, guid: f4b2bca18633d594c9db43babf759e35, type: 2}
+  - {fileID: 11400000, guid: b1833132309269c43942b5132519037c, type: 2}
+  - {fileID: 11400000, guid: bf3b9373a86ad564983c5c6d1eaee65b, type: 2}
+  - {fileID: 11400000, guid: 31337d3b8d719284b9204bd5d29ab781, type: 2}
+  - {fileID: 11400000, guid: 222d352541ee50b43ac46249f0c81a74, type: 2}
