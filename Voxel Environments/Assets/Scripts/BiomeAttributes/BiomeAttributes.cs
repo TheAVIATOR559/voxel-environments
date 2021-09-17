@@ -7,14 +7,29 @@ public class BiomeAttributes : ScriptableObject
 {
     [Tooltip("Biome Name")] public string biomeName;
     [Tooltip("Minimum ground height")] public int solidGroundHeight = 0;
-    [Tooltip("Average height of the terrain")] public int terrainHeight = 0;
+    [Tooltip("Weight of the terrain")] public int terrainWeight = 0;
     [Tooltip("Depth of upper soil layer")] public int upperSoilDepth = 0;
     [Tooltip("Depth of midd soil layer")] public int middleSoilDepth = 0;
     [Tooltip("How agressively noise is applied")] public float terrainScale = 0;
 
     //public Lode[] lodes;
 
-    public virtual byte CreateBiomeSpecificVoxel(Vector3 pos, int seed)
+    protected int[,] heightMap;
+
+    public virtual void CreateBiomeHeightMap(int mapWidth, int mapHeight, int seed)
+    {
+        heightMap = new int[mapWidth, mapHeight];
+
+        for(int x = 0; x < mapWidth; x++)
+        {
+            for(int z = 0; z < mapHeight; z++)
+            {
+                heightMap[x,z] = Mathf.FloorToInt(terrainWeight * Noise.Get2DPerlin(new Vector2(x, z), seed, terrainScale)) + solidGroundHeight;
+            }
+        }
+    }
+
+    public virtual byte CreateBiomeSpecificVoxel(Vector3Int pos, int seed)
     {
         int yPos = Mathf.FloorToInt(pos.y);
 
@@ -28,21 +43,19 @@ public class BiomeAttributes : ScriptableObject
             return (byte)BlockTypes.Bedrock;//bedrock
         }
 
-        int terrainHeight = Mathf.FloorToInt(this.terrainHeight * Noise.Get2DPerlin(new Vector2(pos.x, pos.z), seed, terrainScale)) + solidGroundHeight;
-
-        if (yPos > terrainHeight)//above ground
+        if (yPos > heightMap[pos.x, pos.z])//above ground
         {
             return (byte)BlockTypes.Air;//air
         }
-        else if (yPos == terrainHeight)//top layer
+        else if (yPos == heightMap[pos.x, pos.z])//top layer
         {
             return (byte)BlockTypes.Grass;
         }
-        else if (yPos < terrainHeight && yPos >= terrainHeight - upperSoilDepth)//upper soil layer
+        else if (yPos < heightMap[pos.x, pos.z] && yPos >= heightMap[pos.x, pos.z] - upperSoilDepth)//upper soil layer
         {
             return (byte)BlockTypes.Dirt;
         }
-        else if (yPos < terrainHeight && yPos > (terrainHeight - upperSoilDepth) - middleSoilDepth)//mid soil layer
+        else if (yPos < heightMap[pos.x, pos.z] && yPos > (heightMap[pos.x, pos.z] - upperSoilDepth) - middleSoilDepth)//mid soil layer
         {
             return (byte)BlockTypes.Dirt;
         }

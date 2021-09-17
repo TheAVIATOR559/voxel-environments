@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biomeName: Desert
   solidGroundHeight: 10
-  terrainHeight: 20
+  terrainWeight: 50
   upperSoilDepth: 3
   middleSoilDepth: 4
   terrainScale: 0.25
-  mesaChance: 0.1
+  mesaChance: 0.5
   mesaCooldownDistance: 50
-  mesaHeight: 35
-  mesaWidth: 25
+  mesaHeight: 10
+  mesaWidth: 10

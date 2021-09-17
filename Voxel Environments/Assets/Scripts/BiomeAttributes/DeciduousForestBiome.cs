@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Deciduous Forest", menuName = "Biome Attributes/Deciduous Forest")]
 public class DeciduousForestBiome : BiomeAttributes
 {
-    public override byte CreateBiomeSpecificVoxel(Vector3 pos, int seed)
+    public override byte CreateBiomeSpecificVoxel(Vector3Int pos, int seed)
     {
         return base.CreateBiomeSpecificVoxel(pos, seed);
     }

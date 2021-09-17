@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biomeName: Default
   solidGroundHeight: 20
-  terrainHeight: 20
+  terrainWeight: 10
   upperSoilDepth: 3
   middleSoilDepth: 3
   terrainScale: 0.25

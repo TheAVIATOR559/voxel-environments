@@ -30,11 +30,15 @@ public class World : MonoBehaviour
 
         blockTypes.Sort((x, y) => x.Type.CompareTo(y.Type));
 
+        Seed = Random.Range(-1000, 1001);
+
         GenerateWorld();
     }
 
     private void GenerateWorld()
     {
+        biome.CreateBiomeHeightMap(VoxelData.WorldSizeInChunks * VoxelData.ChunkWidth, VoxelData.WorldSizeInChunks * VoxelData.ChunkWidth, Seed);
+
         for(int x = 0; x < VoxelData.WorldSizeInChunks; x++)
         {
             for(int z = 0; z < VoxelData.WorldSizeInChunks; z++)
@@ -72,7 +76,7 @@ public class World : MonoBehaviour
 
     public byte CreateVoxel(Vector3 pos)
     {
-        return biome.CreateBiomeSpecificVoxel(pos, Seed);
+        return biome.CreateBiomeSpecificVoxel(Vector3Int.FloorToInt(pos), Seed);
     }
 
     private bool IsChunkInWorld(Vector2Int pos)

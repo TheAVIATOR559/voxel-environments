@@ -10,35 +10,45 @@ public class DesertBiome : BiomeAttributes
     [Tooltip("")] public int mesaHeight = 0;
     [Tooltip("")] public int mesaWidth = 0;
 
-    public override byte CreateBiomeSpecificVoxel(Vector3 pos, int seed)
+    public override void CreateBiomeHeightMap(int mapWidth, int mapHeight, int seed)
     {
-        int yPos = Mathf.FloorToInt(pos.y);
+        heightMap = new int[mapWidth, mapHeight];
 
+        for (int x = 0; x < mapWidth; x++)
+        {
+            for (int z = 0; z < mapHeight; z++)
+            {
+                heightMap[x, z] = Mathf.FloorToInt(terrainWeight * Noise.Get2DPerlin(new Vector2(x, z), seed, terrainScale)) + solidGroundHeight;
+                Debug.Log(heightMap[x, z]);
+            }
+        }
+    }
+
+    public override byte CreateBiomeSpecificVoxel(Vector3Int pos, int seed)
+    {
         if (!World.IsVoxelInWorld(pos))
         {
             return (byte)BlockTypes.Air;//empty block
         }
 
-        if (yPos == 0)
+        if (pos.y == 0)
         {
             return (byte)BlockTypes.Bedrock;//bedrock
         }
 
-        int terrainHeight = Mathf.FloorToInt(this.terrainHeight * Noise.Get2DPerlin(new Vector2(pos.x, pos.z), seed, terrainScale)) + solidGroundHeight;
-
-        if (yPos > terrainHeight)//above ground
+        if (pos.y > heightMap[pos.x, pos.z])//above ground
         {
             return (byte)BlockTypes.Air;//air
         }
-        else if (yPos == terrainHeight)//top layer
+        else if (pos.y == heightMap[pos.x, pos.z])//top layer
         {
             return (byte)BlockTypes.Sand;
         }
-        else if (yPos < terrainHeight && yPos >= terrainHeight - upperSoilDepth)//upper soil layer
+        else if (pos.y < heightMap[pos.x, pos.z] && pos.y >= heightMap[pos.x, pos.z] - upperSoilDepth)//upper soil layer
         {
             return (byte)BlockTypes.Sand;
         }
-        else if (yPos < terrainHeight && yPos >= (terrainHeight - upperSoilDepth) - middleSoilDepth)//mid soil layer
+        else if (pos.y < heightMap[pos.x, pos.z] && pos.y >= (heightMap[pos.x, pos.z] - upperSoilDepth) - middleSoilDepth)//mid soil layer
         {
             return (byte)BlockTypes.Sandstone;
         }

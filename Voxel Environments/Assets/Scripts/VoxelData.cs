@@ -73,4 +73,6 @@ public static class VoxelData
 
         return new Vector2Int(xCheck / ChunkWidth, zCheck / ChunkWidth);
     }
+
+    
 }
