@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c358893ae573034cb11e77e14dd65f6, type: 3}
   m_Name: Deciduous Forest
   m_EditorClassIdentifier: 
-  biomeName: 
-  solidGroundHeight: 0
-  terrainHeight: 0
-  stoneHeight: 0
-  terrainScale: 0
+  biomeName: Deciduous Forest
+  solidGroundHeight: 10
+  terrainWeight: 17
+  upperSoilDepth: 3
+  middleSoilDepth: 3
+  terrainScale: 0.2

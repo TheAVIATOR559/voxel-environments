@@ -8,9 +8,10 @@ public class DesertBiome : BiomeAttributes
     [Tooltip("Percent height max of a mesa")] public float mesaChance = 0;
     [Tooltip("Vertical offset height for a mesa")] public int mesaHeight = 0;
     [Tooltip("Number of blocks vertically the mesa bleeds out to")] public int mesaBleedOff = 1;
-    [Tooltip("Percent height minimum of a mesa")] public float playaChance = 0;
+    [Tooltip("Percent height minimum of a playa")] public float playaChance = 0;
     private int minMesaHeight = 0;
     private int maxPlayaHeight = 0;
+    private int minPlayaHeight = 0;
 
     public override void CreateBiomeHeightMap(int mapWidth, int mapHeight, int seed)
     {
@@ -36,11 +37,12 @@ public class DesertBiome : BiomeAttributes
             }
         }
 
-        Debug.Log("MAX " + maxHeight + " :: MIN " + minHeight);
+        //Debug.Log("MAX " + maxHeight + " :: MIN " + minHeight);
 
         minMesaHeight = maxHeight - Mathf.FloorToInt(maxHeight * mesaChance);
         maxPlayaHeight = minHeight + Mathf.FloorToInt(minHeight * playaChance);
-        Debug.Log("MESA " + minMesaHeight + " :: PLAYA " + maxPlayaHeight);
+        minPlayaHeight = minHeight;
+        //Debug.Log("MESA " + minMesaHeight + " :: PLAYA " + maxPlayaHeight);
 
         for (int x = 0; x < mapWidth; x++)
         {
@@ -85,7 +87,7 @@ public class DesertBiome : BiomeAttributes
         {
             return (byte)BlockTypes.Mesa;
         }
-        else if(pos.y == maxPlayaHeight)
+        else if(pos.y <= maxPlayaHeight && pos.y >= minPlayaHeight && !m_world.CheckForVoxel(new Vector3(pos.x, pos.y + 2, pos.z)))
         {
             return (byte)BlockTypes.Saltflat;
         }

@@ -12,3 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9ab09b4aa07ee4d9fe3a5a615a4961, type: 3}
   m_Name: Tiaga
   m_EditorClassIdentifier: 
+  biomeName: Tiaga
+  solidGroundHeight: 5
+  terrainWeight: 50
+  upperSoilDepth: 2
+  middleSoilDepth: 2
+  terrainScale: 0.15

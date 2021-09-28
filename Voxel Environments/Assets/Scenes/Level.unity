@@ -461,8 +461,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f20426be0bbd8a47bc36e9b40170adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Seed: 0
-  biome: {fileID: 11400000, guid: 103bdc65bd94ca84286e1a8b455ee9c4, type: 2}
+  Seed: 8
+  biome: {fileID: 11400000, guid: d937c8be3a07c1e4194b2a292c1293dd, type: 2}
   mat: {fileID: 2100000, guid: 75a5335e095ea09478dc26fc8a4a2929, type: 2}
   blockTypes:
   - {fileID: 11400000, guid: 816b5330305b8f44f80745591ee59c31, type: 2}

@@ -15,6 +15,7 @@ public class BiomeAttributes : ScriptableObject
     //public Lode[] lodes;
 
     protected int[,] heightMap;
+    protected World m_world;
 
     public virtual void CreateBiomeHeightMap(int mapWidth, int mapHeight, int seed)
     {
@@ -63,5 +64,10 @@ public class BiomeAttributes : ScriptableObject
         {
             return (byte)BlockTypes.Stone;//stone, ores, other underground stuff
         }
+    }
+
+    public void SetUpReferences(World world)
+    {
+        m_world = world;
     }
 }

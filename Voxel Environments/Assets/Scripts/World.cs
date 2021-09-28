@@ -16,6 +16,8 @@ public class World : MonoBehaviour
     {
         blockTypes.Sort((x, y) => x.Type.CompareTo(y.Type));
 
+        biome.SetUpReferences(this);
+
         GenerateWorld();
     }
 
