@@ -462,21 +462,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Seed: 8
-  biome: {fileID: 11400000, guid: d937c8be3a07c1e4194b2a292c1293dd, type: 2}
+  biome: {fileID: 11400000, guid: 103bdc65bd94ca84286e1a8b455ee9c4, type: 2}
   mat: {fileID: 2100000, guid: 75a5335e095ea09478dc26fc8a4a2929, type: 2}
   blockTypes:
+  - {fileID: 11400000, guid: 222d352541ee50b43ac46249f0c81a74, type: 2}
   - {fileID: 11400000, guid: 816b5330305b8f44f80745591ee59c31, type: 2}
   - {fileID: 11400000, guid: 417591fcdb184a246a8f62fe27160f9c, type: 2}
   - {fileID: 11400000, guid: 667d67c844fff104da37dd60e7b7b9e0, type: 2}
-  - {fileID: 11400000, guid: ff2b01be7395a1d488cd12606c98b694, type: 2}
   - {fileID: 11400000, guid: 0b69ce2c9cd841743bf1f303629f30d5, type: 2}
-  - {fileID: 11400000, guid: 7b19370eb3ab2f442a788614ee4db614, type: 2}
   - {fileID: 11400000, guid: d6693331bce92a745b98b3c249b5ae61, type: 2}
   - {fileID: 11400000, guid: 96f151e28634c0f44a86ef57f9b8e824, type: 2}
   - {fileID: 11400000, guid: 492281a81d3e8cb4299bb57958cd10ea, type: 2}
   - {fileID: 11400000, guid: 9b00034a2ad287e4fbc99f903b5c2ef7, type: 2}
   - {fileID: 11400000, guid: f4b2bca18633d594c9db43babf759e35, type: 2}
-  - {fileID: 11400000, guid: b1833132309269c43942b5132519037c, type: 2}
   - {fileID: 11400000, guid: bf3b9373a86ad564983c5c6d1eaee65b, type: 2}
   - {fileID: 11400000, guid: 31337d3b8d719284b9204bd5d29ab781, type: 2}
-  - {fileID: 11400000, guid: 222d352541ee50b43ac46249f0c81a74, type: 2}
