@@ -50,7 +50,7 @@ public class BiomeAttributes : ScriptableObject
         }
         else if (yPos == heightMap[pos.x, pos.z])//top layer
         {
-            return (byte)BlockTypes.Grass;
+            return (byte)BlockTypes.Cactus;
         }
         else if (yPos < heightMap[pos.x, pos.z] && yPos >= heightMap[pos.x, pos.z] - upperSoilDepth)//upper soil layer
         {

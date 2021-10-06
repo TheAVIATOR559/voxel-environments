@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecaba1c1ae74c3e41829b66915cf20c3, type: 3}
   m_Name: Mesa
   m_EditorClassIdentifier: 
-  Type: 10
+  Type: 7
   isSolid: 1
-  backTexture: 10
-  frontTexture: 10
-  topTexture: 10
-  bottomTexture: 10
-  leftTexture: 10
-  rightTexture: 10
+  backTexture: 6
+  frontTexture: 6
+  topTexture: 6
+  bottomTexture: 6
+  leftTexture: 6
+  rightTexture: 6

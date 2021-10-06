@@ -15,7 +15,12 @@ public enum BlockTypes : byte
     Saltflat,
     Tiaga_Dirt,
     Tiaga_Grass,
-    Permafrost
+    Permafrost,
+    Cactus,
+    Oak_Log,
+    Fir_Log,
+    Oak_Leaves,
+    Fir_Leaves
 }
 
 [CreateAssetMenu(fileName = "Block", menuName = "Block Type")]

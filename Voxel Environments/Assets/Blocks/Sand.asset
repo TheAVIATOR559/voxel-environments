@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecaba1c1ae74c3e41829b66915cf20c3, type: 3}
   m_Name: Sand
   m_EditorClassIdentifier: 
-  Type: 8
+  Type: 5
   isSolid: 1
-  backTexture: 8
-  frontTexture: 8
-  topTexture: 8
-  bottomTexture: 8
-  leftTexture: 8
-  rightTexture: 8
+  backTexture: 5
+  frontTexture: 5
+  topTexture: 5
+  bottomTexture: 5
+  leftTexture: 5
+  rightTexture: 5
