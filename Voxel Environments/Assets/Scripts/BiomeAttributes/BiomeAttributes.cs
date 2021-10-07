@@ -12,7 +12,14 @@ public class BiomeAttributes : ScriptableObject
     [Tooltip("Depth of midd soil layer")] public int middleSoilDepth = 0;
     [Tooltip("How agressively noise is applied")] public float terrainScale = 0;
 
-    //public Lode[] lodes;
+    [Header("Trees")]
+    public float treeZoneScale = 1.3f;
+    [Range(0f, 1f)] public float treeZoneThreshold = 0.6f;
+    public float treePlacementScale = 15f;
+    [Range(0f, 1f)] public float treePlacementThreshold = 0.8f;
+
+    public int maxTreeHeight = 12;
+    public int minTreeHeight = 5;
 
     protected int[,] heightMap;
     protected World m_world;
@@ -32,38 +39,50 @@ public class BiomeAttributes : ScriptableObject
 
     public virtual byte CreateBiomeSpecificVoxel(Vector3Int pos, int seed)
     {
-        int yPos = Mathf.FloorToInt(pos.y);
+        byte voxelValue = 0;
 
         if (!World.IsVoxelInWorld(pos))
         {
-            return (byte)BlockTypes.Air;//empty block
+            voxelValue = (byte)BlockTypes.Air;//empty block
         }
-
-        if (yPos == 0)
+        else if (pos.y == 0)
         {
-            return (byte)BlockTypes.Bedrock;//bedrock
+            voxelValue = (byte)BlockTypes.Bedrock;//bedrock
         }
-
-        if (yPos > heightMap[pos.x, pos.z])//above ground
+        else if (pos.y > heightMap[pos.x, pos.z])//above ground
         {
-            return (byte)BlockTypes.Air;//air
+            voxelValue = (byte)BlockTypes.Air;//air
         }
-        else if (yPos == heightMap[pos.x, pos.z])//top layer
+        else if (pos.y == heightMap[pos.x, pos.z])//top layer
         {
-            return (byte)BlockTypes.Cactus;
+            voxelValue = (byte)BlockTypes.Grass;
         }
-        else if (yPos < heightMap[pos.x, pos.z] && yPos >= heightMap[pos.x, pos.z] - upperSoilDepth)//upper soil layer
+        else if (pos.y < heightMap[pos.x, pos.z] && pos.y >= heightMap[pos.x, pos.z] - upperSoilDepth)//upper soil layer
         {
-            return (byte)BlockTypes.Dirt;
+            voxelValue = (byte)BlockTypes.Dirt;
         }
-        else if (yPos < heightMap[pos.x, pos.z] && yPos > (heightMap[pos.x, pos.z] - upperSoilDepth) - middleSoilDepth)//mid soil layer
+        else if (pos.y < heightMap[pos.x, pos.z] && pos.y > (heightMap[pos.x, pos.z] - upperSoilDepth) - middleSoilDepth)//mid soil layer
         {
-            return (byte)BlockTypes.Dirt;
+            voxelValue = (byte)BlockTypes.Dirt;
         }
         else
         {
-            return (byte)BlockTypes.Stone;//stone, ores, other underground stuff
+            voxelValue = (byte)BlockTypes.Stone;//stone, ores, other underground stuff
         }
+
+        //tree pass
+        if(pos.y == heightMap[pos.x, pos.z])
+        {
+            if(Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 0, treeZoneScale) > treeZoneThreshold)
+            {
+                if(Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 0, treePlacementScale) > treePlacementThreshold)
+                {
+                    Structure.MakeTree(pos, m_world.modifications, minTreeHeight, maxTreeHeight);
+                }
+            }
+        }
+
+        return voxelValue;
     }
 
     public void SetUpReferences(World world)

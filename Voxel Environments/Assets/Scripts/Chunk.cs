@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Chunk 
 {
     public Vector2Int coord;
@@ -16,6 +17,8 @@ public class Chunk
     List<Vector2> uvs = new List<Vector2>();
 
     public byte[,,] voxelMap = new byte[VoxelData.ChunkWidth, VoxelData.ChunkHeight, VoxelData.ChunkWidth];
+
+    public Queue<VoxelMod> mods = new Queue<VoxelMod>();
 
     World m_world;
 
@@ -96,8 +99,15 @@ public class Chunk
         IsVoxelMapPopulated = true;
     }
 
-    private void UpdateChunk()
+    public void UpdateChunk()
     {
+        while(mods.Count > 0)
+        {
+            VoxelMod voxMod = mods.Dequeue();
+            Vector3 pos = voxMod.position -= Position;
+            voxelMap[(int)pos.x, (int)pos.y, (int)pos.z] = voxMod.id;
+        }
+
         ClearMeshData();
 
         for (int y = 0; y < VoxelData.ChunkHeight; y++)

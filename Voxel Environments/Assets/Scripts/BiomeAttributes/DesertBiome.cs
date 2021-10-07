@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Desert", menuName = "Biome Attributes/Desert")]
 public class DesertBiome : BiomeAttributes
 {
+    [Header("Desert Specific")]
     [Tooltip("Percent height max of a mesa")] public float mesaChance = 0;
     [Tooltip("Vertical offset height for a mesa")] public int mesaHeight = 0;
     [Tooltip("Number of blocks vertically the mesa bleeds out to")] public int mesaBleedOff = 1;
@@ -69,43 +70,58 @@ public class DesertBiome : BiomeAttributes
 
     public override byte CreateBiomeSpecificVoxel(Vector3Int pos, int seed)
     {
+        byte voxelValue = 0;
+
         if (!World.IsVoxelInWorld(pos))
         {
-            return (byte)BlockTypes.Air;//empty block
+            voxelValue = (byte)BlockTypes.Air;//empty block
         }
 
         if (pos.y == 0)
         {
-            return (byte)BlockTypes.Bedrock;//bedrock
+            voxelValue = (byte)BlockTypes.Bedrock;//bedrock
         }
 
         if (pos.y > heightMap[pos.x, pos.z])//above ground
         {
-            return (byte)BlockTypes.Air;//air
+            voxelValue = (byte)BlockTypes.Air;//air
         }
         else if(pos.y >= minMesaHeight)
         {
-            return (byte)BlockTypes.Mesa;
+            voxelValue = (byte)BlockTypes.Mesa;
         }
         else if(pos.y <= maxPlayaHeight && pos.y >= minPlayaHeight && !m_world.CheckForVoxel(new Vector3(pos.x, pos.y + 2, pos.z)))
         {
-            return (byte)BlockTypes.Saltflat;
+            voxelValue = (byte)BlockTypes.Saltflat;
         }
         else if (pos.y == heightMap[pos.x, pos.z])//top layer
         {
-            return (byte)BlockTypes.Sand;
+            voxelValue = (byte)BlockTypes.Sand;
         }
         else if (pos.y < heightMap[pos.x, pos.z] && pos.y >= heightMap[pos.x, pos.z] - upperSoilDepth)//upper soil layer
         {
-            return (byte)BlockTypes.Sand;
+            voxelValue = (byte)BlockTypes.Sand;
         }
         else if (pos.y < heightMap[pos.x, pos.z] && pos.y >= (heightMap[pos.x, pos.z] - upperSoilDepth) - middleSoilDepth)//mid soil layer
         {
-            return (byte)BlockTypes.Sandstone;
+            voxelValue = (byte)BlockTypes.Sandstone;
         }
         else
         {
-            return (byte)BlockTypes.Stone;//stone, ores, other underground stuff
+            voxelValue = (byte)BlockTypes.Stone;//stone, ores, other underground stuff
         }
+
+        if (pos.y == heightMap[pos.x, pos.z] && pos.y < minMesaHeight && pos.y > maxPlayaHeight)
+        {
+            if (Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 0, treeZoneScale) > treeZoneThreshold)
+            {
+                if (Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 0, treePlacementScale) > treePlacementThreshold)
+                {
+                    Structure.MakeCactus(pos, m_world.modifications, minTreeHeight, maxTreeHeight);
+                }
+            }
+        }
+
+        return voxelValue;
     }
 }

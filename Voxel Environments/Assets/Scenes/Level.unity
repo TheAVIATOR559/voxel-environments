@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: a7f7d520c6356b948a90ab2dd4098ebd, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -403,7 +403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RegenWorldKey: 116
-  world: {fileID: 1052959217}
+  LoadingScene: Loading
 --- !u!4 &326532250
 Transform:
   m_ObjectHideFlags: 0
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Seed: 8
-  biome: {fileID: 11400000, guid: 65ba2a83c8c078e4287b891b6243fb91, type: 2}
+  biome: {fileID: 11400000, guid: d937c8be3a07c1e4194b2a292c1293dd, type: 2}
   mat: {fileID: 2100000, guid: 75a5335e095ea09478dc26fc8a4a2929, type: 2}
   blockTypes:
   - {fileID: 11400000, guid: 222d352541ee50b43ac46249f0c81a74, type: 2}
@@ -482,3 +482,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f4b2bca18633d594c9db43babf759e35, type: 2}
   - {fileID: 11400000, guid: bf3b9373a86ad564983c5c6d1eaee65b, type: 2}
   - {fileID: 11400000, guid: 31337d3b8d719284b9204bd5d29ab781, type: 2}
+  chunksToUpdate: []

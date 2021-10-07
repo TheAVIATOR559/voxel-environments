@@ -12,17 +12,21 @@ public class World : MonoBehaviour
 
     private Chunk[,] chunks = new Chunk[VoxelData.WorldSizeInChunks, VoxelData.WorldSizeInChunks];
 
-    private void Start()
-    {
-        blockTypes.Sort((x, y) => x.Type.CompareTo(y.Type));
+    public Queue<VoxelMod> modifications = new Queue<VoxelMod>();
+    [SerializeField]private List<Chunk> chunksToUpdate = new List<Chunk>();
 
+    private void Awake()
+    {
         biome.SetUpReferences(this);
 
-        GenerateWorld();
+        RegenWorld();
     }
 
     public void RegenWorld()
     {
+        modifications.Clear();
+        chunksToUpdate.Clear();
+
         foreach(Transform child in transform)
         {
             Destroy(child.gameObject);
@@ -48,6 +52,31 @@ public class World : MonoBehaviour
                 chunks[x, z] = new Chunk(new Vector2Int(x, z), this, true);
             }
         }
+
+        while(modifications.Count > 0)
+        {
+            VoxelMod voxMod = modifications.Dequeue();
+
+            Vector2Int chunkCoord = GetChunkCoordFromVector3(voxMod.position);
+            //Debug.Log(chunkCoord);
+            if(chunks[chunkCoord.x, chunkCoord.y] == null)
+            {
+                chunks[chunkCoord.x, chunkCoord.y] = new Chunk(chunkCoord, this, true);
+            }
+
+            chunks[chunkCoord.x, chunkCoord.y].mods.Enqueue(voxMod);
+
+            if(!chunksToUpdate.Contains(chunks[chunkCoord.x, chunkCoord.y]))
+            {
+                chunksToUpdate.Add(chunks[chunkCoord.x, chunkCoord.y]);
+            }
+        }
+
+        foreach(Chunk chunk in chunksToUpdate)
+        {
+            chunk.UpdateChunk();
+        }
+        chunksToUpdate.Clear();
     }
 
     private Vector2Int GetChunkCoordFromVector3(Vector3 pos)
@@ -92,6 +121,16 @@ public class World : MonoBehaviour
         {
             return false;
         }
+    }
+
+    public void AddVoxelMod(VoxelMod mod)
+    {
+        modifications.Enqueue(mod);
+    }
+
+    public void RemoveVoxelMod()
+    {
+        modifications.Dequeue();
     }
 
     public static bool IsVoxelInWorld(Vector3 pos)

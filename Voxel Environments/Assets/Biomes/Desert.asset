@@ -18,6 +18,12 @@ MonoBehaviour:
   upperSoilDepth: 3
   middleSoilDepth: 4
   terrainScale: 0.25
+  treeZoneScale: 1.3
+  treeZoneThreshold: 0.6
+  treePlacementScale: 15
+  treePlacementThreshold: 0.8
+  maxTreeHeight: 12
+  minTreeHeight: 2
   mesaChance: 0.1
   mesaHeight: 10
   mesaBleedOff: 1
