@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 9
   isSolid: 1
-  backTexture: 12
-  frontTexture: 12
-  topTexture: 12
-  bottomTexture: 12
-  leftTexture: 12
-  rightTexture: 12
+  backTexture: 14
+  frontTexture: 14
+  topTexture: 14
+  bottomTexture: 14
+  leftTexture: 14
+  rightTexture: 14

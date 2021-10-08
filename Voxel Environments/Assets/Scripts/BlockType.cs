@@ -20,7 +20,9 @@ public enum BlockTypes : byte
     Oak_Log,
     Fir_Log,
     Oak_Leaves,
-    Fir_Leaves
+    Fir_Leaves,
+    Cracked_Stone,
+    Muskeg
 }
 
 [CreateAssetMenu(fileName = "Block", menuName = "Block Type")]

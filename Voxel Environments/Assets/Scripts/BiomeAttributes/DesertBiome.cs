@@ -76,13 +76,11 @@ public class DesertBiome : BiomeAttributes
         {
             voxelValue = (byte)BlockTypes.Air;//empty block
         }
-
-        if (pos.y == 0)
+        else if (pos.y == 0)
         {
             voxelValue = (byte)BlockTypes.Bedrock;//bedrock
         }
-
-        if (pos.y > heightMap[pos.x, pos.z])//above ground
+        else if (pos.y > heightMap[pos.x, pos.z])//above ground
         {
             voxelValue = (byte)BlockTypes.Air;//air
         }
@@ -113,9 +111,9 @@ public class DesertBiome : BiomeAttributes
 
         if (pos.y == heightMap[pos.x, pos.z] && pos.y < minMesaHeight && pos.y > maxPlayaHeight)
         {
-            if (Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 0, treeZoneScale) > treeZoneThreshold)
+            if (Noise.Get2DPerlin(new Vector2(pos.x, pos.z), -seed, treeZoneScale) > treeZoneThreshold)
             {
-                if (Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 0, treePlacementScale) > treePlacementThreshold)
+                if (Noise.Get2DPerlin(new Vector2(pos.x, pos.z), -seed, treePlacementScale) > treePlacementThreshold)
                 {
                     Structure.MakeCactus(pos, m_world.modifications, minTreeHeight, maxTreeHeight);
                 }

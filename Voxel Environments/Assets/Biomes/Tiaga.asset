@@ -13,8 +13,18 @@ MonoBehaviour:
   m_Name: Tiaga
   m_EditorClassIdentifier: 
   biomeName: Tiaga
-  solidGroundHeight: 5
+  solidGroundHeight: 2
   terrainWeight: 50
   upperSoilDepth: 2
-  middleSoilDepth: 2
+  middleSoilDepth: 5
   terrainScale: 0.15
+  treeZoneScale: 1.3
+  treeZoneThreshold: 0.6
+  treePlacementScale: 15
+  treePlacementThreshold: 0.8
+  maxTreeHeight: 25
+  minTreeHeight: 7
+  firTreeGrowthRate: 0.5
+  treeLinePercentage: 0.15
+  muskegChance: 0.1
+  riverChance: 0.1

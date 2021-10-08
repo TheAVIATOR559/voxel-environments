@@ -73,11 +73,11 @@ public class BiomeAttributes : ScriptableObject
         //tree pass
         if(pos.y == heightMap[pos.x, pos.z])
         {
-            if(Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 0, treeZoneScale) > treeZoneThreshold)
+            if(Noise.Get2DPerlin(new Vector2(pos.x, pos.z), -seed, treeZoneScale) > treeZoneThreshold)
             {
-                if(Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 0, treePlacementScale) > treePlacementThreshold)
+                if(Noise.Get2DPerlin(new Vector2(pos.x, pos.z), -seed, treePlacementScale) > treePlacementThreshold)
                 {
-                    Structure.MakeTree(pos, m_world.modifications, minTreeHeight, maxTreeHeight);
+                    Structure.MakeOakTree(pos, m_world.modifications, minTreeHeight, maxTreeHeight);
                 }
             }
         }
