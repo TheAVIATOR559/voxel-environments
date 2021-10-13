@@ -40,20 +40,23 @@ public class TiagaBiome : BiomeAttributes
             }
         }
 
-        treeLineHeight = maxHeight - Mathf.RoundToInt(maxHeight * treeLineHeight);//does not work properly
+        treeLineHeight = maxHeight - Mathf.RoundToInt(maxHeight * treeLinePercentage);//does not work properly
+
+        Debug.Log(treeLineHeight + " :: " + maxHeight + " - " + Mathf.RoundToInt(maxHeight * treeLinePercentage));
+
         maxMuskegHeight = minHeight + Mathf.RoundToInt(minHeight * muskegChance);
         minMuskegHeight = minHeight;
 
-        for (int x = 0; x < mapWidth; x++)
-        {
-            for (int z = 0; z < mapHeight; z++)
-            {
-                if(heightMap[x,z] <= maxMuskegHeight)
-                {
-                    heightMap[x, z] = minHeight;
-                }
-            }
-        }
+        //for (int x = 0; x < mapWidth; x++)
+        //{
+        //    for (int z = 0; z < mapHeight; z++)
+        //    {
+        //        if(heightMap[x,z] <= maxMuskegHeight)
+        //        {
+        //            heightMap[x, z] = minHeight;
+        //        }
+        //    }
+        //}
     }
 
     public override byte CreateBiomeSpecificVoxel(Vector3Int pos, int seed)
@@ -75,6 +78,10 @@ public class TiagaBiome : BiomeAttributes
         else if(pos.y == heightMap[pos.x, pos.z] && pos.y >= treeLineHeight)
         {
             voxelValue = (byte)BlockTypes.Cracked_Stone;
+        }
+        else if(pos.y <= maxMuskegHeight && pos.y >= minMuskegHeight && !m_world.CheckForVoxel(new Vector3(pos.x, pos.y + 2, pos.z)))
+        {
+            voxelValue = (byte)BlockTypes.Muskeg;
         }
         else if (pos.y == heightMap[pos.x, pos.z] && pos.y < treeLineHeight)//top layer
         {

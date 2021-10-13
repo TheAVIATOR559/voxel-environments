@@ -1,150 +1,216 @@
 Using pre-set license
 Built from '2020.2/staging' branch; Version is '2020.2.7f1 (c53830e277f1) revision 12924976'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19043.1237; Version 2009; 64bit' Language: 'en' Physical Memory: 16328 MB
+OS: 'Windows 10 Home; OS build 18362.1256; Version 1903; 64bit' Language: 'en' Physical Memory: 16239 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-D:\2020.2.7f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.2.7f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/GitHub/voxel-environments/Voxel Environments
+C:/Users/Jacob Howell/Documents/GitHub/voxel-environments/Voxel Environments
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62884
-Successfully changed project path to: D:/GitHub/voxel-environments/Voxel Environments
-D:/GitHub/voxel-environments/Voxel Environments
+56737
+Successfully changed project path to: C:/Users/Jacob Howell/Documents/GitHub/voxel-environments/Voxel Environments
+C:/Users/Jacob Howell/Documents/GitHub/voxel-environments/Voxel Environments
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 53.76 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 68.88 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.7f1 (c53830e277f1)
-[Subsystems] Discovering subsystems at path D:/2020.2.7f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/GitHub/voxel-environments/Voxel Environments/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Jacob Howell/Documents/GitHub/voxel-environments/Voxel Environments/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
     Vendor:   
-    VRAM:     8079 MB
-    Driver:   30.0.14.7212
+    VRAM:     4021 MB
+    Driver:   27.21.14.5167
 Initialize mono
-Mono path[0] = 'D:/2020.2.7f1/Editor/Data/Managed'
-Mono path[1] = 'D:/2020.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/2020.2.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56516
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56732
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/2020.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001070 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002653 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 58.90 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 73.00 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.219 seconds
+- Completed reload, in  1.764 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.015325 seconds.
+Registered in 0.002630 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-0000015761299010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBF16290 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC6B7F40 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEB1ED0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC253780 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576139FB90 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC8DB020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015760A03230 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC6B8340 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015760B6B020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015760A03230 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015761F4FFE0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC82A020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015760A03230 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015761F55030 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBF16290 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC26D390 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015761C9F010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBCBC550 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015761EAB010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC8DB020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC551620 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015761CB3A20 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015761CB3A20 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC10F420 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 82.35 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 64.53 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.378 seconds
+- Completed reload, in  1.640 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2440 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 113.9 MB.
-System memory in use after: 112.2 MB.
+System memory in use before: 114.7 MB.
+System memory in use after: 113.0 MB.
 
 Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2858.
-Total: 4.920900 ms (FindLiveObjects: 0.509300 ms CreateObjectMapping: 0.253700 ms MarkObjects: 2.626800 ms  DeleteObjects: 1.529700 ms)
+Total: 7.008600 ms (FindLiveObjects: 0.424600 ms CreateObjectMapping: 0.381800 ms MarkObjects: 4.092100 ms  DeleteObjects: 2.107800 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Blocks/Cracked Stone.asset
-  artifactKey: Guid(27e19ce3be9511645afa475edc48457e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blocks/Cracked Stone.asset using Guid(27e19ce3be9511645afa475edc48457e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb79701b79e9b631d6e4f6d0b2a1c065') in 0.054161 seconds
-  Import took 0.060224 seconds .
+  path: Assets/Scripts
+  artifactKey: Guid(02a3527b6b33a924e8ec66aa805ea717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(02a3527b6b33a924e8ec66aa805ea717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85cf21d48b1b374b6eb83dfa7f5dd983') in 0.014942 seconds
+  Import took 0.020956 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 26.932391 seconds.
-  path: Assets/Blocks/Muskeg.asset
-  artifactKey: Guid(dfd3905bda3cdab49abb1403a5857728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blocks/Muskeg.asset using Guid(dfd3905bda3cdab49abb1403a5857728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38fc39fe05422b706414dcb7a3a0e068') in 0.012739 seconds
-  Import took 0.017807 seconds .
+  Time since last request: 0.000317 seconds.
+  path: Assets/Scripts/BiomeAttributes
+  artifactKey: Guid(6d818f9c2b200314199897668a39c980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BiomeAttributes using Guid(6d818f9c2b200314199897668a39c980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a969299b712059c7940b51e87d47bf79') in 0.009748 seconds
+  Import took 0.016319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.902011 seconds.
+  path: Assets/Scripts/BiomeAttributes/TiagaBiome.cs
+  artifactKey: Guid(3f9ab09b4aa07ee4d9fe3a5a615a4961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BiomeAttributes/TiagaBiome.cs using Guid(3f9ab09b4aa07ee4d9fe3a5a615a4961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f87805b3295505de6c34c9889cfb960') in 0.278341 seconds
+  Import took 0.289969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 168.639755 seconds.
+  path: Assets/Scripts/BiomeAttributes/TiagaBiome.cs
+  artifactKey: Guid(3f9ab09b4aa07ee4d9fe3a5a615a4961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BiomeAttributes/TiagaBiome.cs using Guid(3f9ab09b4aa07ee4d9fe3a5a615a4961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd570d52c65f51a42297b6bb916bf5f') in 0.004621 seconds
+  Import took 0.014560 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001134 seconds.
+Registered in 0.001687 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.000 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2347 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 109.4 MB.
-System memory in use after: 107.7 MB.
-
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2861.
-Total: 3.487900 ms (FindLiveObjects: 0.357000 ms CreateObjectMapping: 0.201600 ms MarkObjects: 1.792800 ms  DeleteObjects: 1.135500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001625 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.306 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2347 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 109.4 MB.
-System memory in use after: 107.8 MB.
-
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2864.
-Total: 4.825900 ms (FindLiveObjects: 0.262400 ms CreateObjectMapping: 0.109500 ms MarkObjects: 2.266800 ms  DeleteObjects: 2.185400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001184 seconds.
-Begin MonoManager ReloadAssembly
+Symbol file data-00000158FC299F20 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157614DC020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEBAE0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015761DDF010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015761DDF010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBF81020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015760851070 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBF9F060 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEB4E0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015767567090 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC935020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBE99DC0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576762A010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEE0370 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576272C040 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC10A010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC301460 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015760819010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157673E5D70 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015760851070 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576764FE20 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBE9BEC0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC24B470 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC24B470 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC10F420 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -152,17 +218,657 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.963 seconds
+- Completed reload, in  1.776 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2347 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 109.5 MB.
-System memory in use after: 107.8 MB.
+System memory in use before: 110.1 MB.
+System memory in use after: 108.5 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2861.
+Total: 3.898700 ms (FindLiveObjects: 0.287100 ms CreateObjectMapping: 0.135300 ms MarkObjects: 2.224500 ms  DeleteObjects: 1.250600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002291 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000015768646010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015761284D70 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEAEE0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015766E4CAC0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576100A410 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBFE1010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157671F0A80 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576459ED80 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEC0E0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBFF06F0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576084D060 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC959700 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015766BC40D0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157645CADD0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158F6E067C0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC3357D0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015766D24240 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576485F980 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157685C9D20 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157670DFD00 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015760F6A030 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC95ADB0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015766E4CAC0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015764584140 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015764642CF0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.480 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2347 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.2 MB.
+System memory in use after: 108.5 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2864.
+Total: 4.780100 ms (FindLiveObjects: 0.284800 ms CreateObjectMapping: 0.136900 ms MarkObjects: 2.804200 ms  DeleteObjects: 1.552800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.362480 seconds.
+  path: Assets/Biomes/Default.asset
+  artifactKey: Guid(65ba2a83c8c078e4287b891b6243fb91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Biomes/Default.asset using Guid(65ba2a83c8c078e4287b891b6243fb91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '427acfc987944628aea6b22e5f8df5ce') in 0.038638 seconds
+  Import took 0.045219 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Biomes/Deciduous Forest.asset
+  artifactKey: Guid(fb3fc90038332254ba9e06b7993e2b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Biomes/Deciduous Forest.asset using Guid(fb3fc90038332254ba9e06b7993e2b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd71e3315c4e4fef148b6251cf1d9b22e') in 0.014332 seconds
+  Import took 0.023355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Biomes/Tiaga.asset
+  artifactKey: Guid(d937c8be3a07c1e4194b2a292c1293dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Biomes/Tiaga.asset using Guid(d937c8be3a07c1e4194b2a292c1293dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd64d93cd93506175e6fd22dfcc0b05d6') in 0.020408 seconds
+  Import took 0.027485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/Biomes
+  artifactKey: Guid(446c33e6f8c52cd4598c14737a6e9af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Biomes using Guid(446c33e6f8c52cd4598c14737a6e9af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c34432a441cb5ed1bf750e9c9cec960') in 0.150565 seconds
+  Import took 0.158072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Biomes/Desert.asset
+  artifactKey: Guid(103bdc65bd94ca84286e1a8b455ee9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Biomes/Desert.asset using Guid(103bdc65bd94ca84286e1a8b455ee9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbd6dc0e3ca33b14d80222cd367b0d99') in 0.014046 seconds
+  Import took 0.020633 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002090 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001576472EAB0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157639F1D80 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEBAE0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015766E4CAC0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015764578100 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC326200 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157671F0A80 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBF9F060 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEACE0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015766D42F30 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157645C8DC0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBF87270 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576200F410 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEE0370 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158F6E0A200 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015768ACF020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC797020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015761C45010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157649110A0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015762008BC0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157685B96C0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBF85FE0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015766E4CAC0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015766E4CAC0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC173010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.449 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2347 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.2 MB.
+System memory in use after: 108.5 MB.
 
 Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2867.
-Total: 3.558000 ms (FindLiveObjects: 0.278700 ms CreateObjectMapping: 0.217500 ms MarkObjects: 1.886300 ms  DeleteObjects: 1.174300 ms)
+Total: 6.899600 ms (FindLiveObjects: 0.287400 ms CreateObjectMapping: 0.125300 ms MarkObjects: 4.230100 ms  DeleteObjects: 2.254800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007122 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001576738D950 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015760B02C10 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEBAE0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBF83020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC418D90 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC326200 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157670DFD00 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015766D0EE90 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEB4E0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576715FC70 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015764684010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015760AA7AC0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015760663030 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015766D0EE90 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158F6E067C0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC3357D0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015766D24240 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576485F980 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015767123830 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157670DFD00 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015767AEFBA0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157605D7A00 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015763D3F010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015763D3F010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015768289010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.453 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2347 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.2 MB.
+System memory in use after: 108.5 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2870.
+Total: 4.473800 ms (FindLiveObjects: 0.391700 ms CreateObjectMapping: 0.173400 ms MarkObjects: 2.294900 ms  DeleteObjects: 1.611900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001800 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000158FC299F20 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015761E04CB0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEC8E0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015761C9F010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC418D90 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC326200 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576204B580 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157605CF9D0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEB6E0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC3C3420 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576101C010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015766C40FC0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015763F6C020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576083D010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158F6E067C0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015761B75010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576478CE30 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157649470C0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015760529780 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015761BF7020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157685B96C0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157640D8AB0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015761C9F010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015766EA4F00 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576074F010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.708 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2347 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.2 MB.
+System memory in use after: 108.5 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2873.
+Total: 5.271700 ms (FindLiveObjects: 0.440400 ms CreateObjectMapping: 0.234300 ms MarkObjects: 3.137700 ms  DeleteObjects: 1.457600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002203 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000158FC299F20 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015768523820 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEB6E0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBF83020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157689E2010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBFE1010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576204B580 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157646EA2B0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEC6E0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015763B43D80 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015764684010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015764821AF0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015760520090 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157648C8020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158F6E0A200 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157687A2020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015766D24240 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157649470C0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC7BCBC0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576121C010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157645A2D90 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC958050 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157609F3020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157609F3020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576074F010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.311 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2347 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.2 MB.
+System memory in use after: 108.6 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2876.
+Total: 5.411300 ms (FindLiveObjects: 0.385300 ms CreateObjectMapping: 0.180900 ms MarkObjects: 2.924800 ms  DeleteObjects: 1.917800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001871 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000158FC299F20 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC27B490 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEB6E0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015763B55010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC418D90 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576842F010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576204B580 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576482AD80 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEC6E0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157689C0030 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157648E7FE0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576481B5E0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015760663030 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576482AD80 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158F6E09370 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157639F0EC0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157673F1540 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015763B55010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157613A06E0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157646FCDA0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576713BD50 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015761CB60E0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015763B55010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015763B55010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576074F010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.264 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2347 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.2 MB.
+System memory in use after: 108.6 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2879.
+Total: 4.785200 ms (FindLiveObjects: 0.444800 ms CreateObjectMapping: 0.215100 ms MarkObjects: 2.611700 ms  DeleteObjects: 1.512200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001851 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000158FC299F20 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBFA7D20 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEB6E0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBF83020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FC418D90 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015763F96020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576204B580 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015761CB1020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEC2E0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015769154020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576101C010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157605D1910 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015760520090 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015767091040 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158F6E084E0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157687A2020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157679AB060 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015767567090 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015767ECC9D0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015764697CB0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157618B0090 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157608533B0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015767567090 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015767567090 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576074F010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.369 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2347 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.3 MB.
+System memory in use after: 108.6 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2882.
+Total: 5.320800 ms (FindLiveObjects: 0.370300 ms CreateObjectMapping: 0.171800 ms MarkObjects: 2.912100 ms  DeleteObjects: 1.865200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004176 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000158FC299F20 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157645E0E20 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEB8E0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157684E1030 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157684E1030 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015763F96020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576204B580 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157646F8D90 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FBEEB0E0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157680BE020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015764684010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015763F93910 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015760663030 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015764628C90 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158F6E0A200 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157626F3020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015766EA4F00 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157610E0020 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000158FB99F9D0 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015760AFE710 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576713BD50 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000157681C5100 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015766E14060 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000015766E14060 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001576074F010 doesn't match image C:\Users\Jacob Howell\Documents\GitHub\voxel-environments\Voxel Environments\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.255 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2347 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.3 MB.
+System memory in use after: 108.6 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2885.
+Total: 3.960400 ms (FindLiveObjects: 0.335700 ms CreateObjectMapping: 0.121800 ms MarkObjects: 2.201400 ms  DeleteObjects: 1.299500 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
