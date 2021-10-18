@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 17
   isSolid: 1
+  isTransparent: 0
   backTexture: 22
   frontTexture: 22
   topTexture: 22

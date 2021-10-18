@@ -8,6 +8,7 @@ public class World : MonoBehaviour
     public BiomeAttributes biome;
 
     public Material mat;
+    public Material transparentMat;
     public List<BlockType> blockTypes;
 
     private Chunk[,] chunks = new Chunk[VoxelData.WorldSizeInChunks, VoxelData.WorldSizeInChunks];
@@ -103,6 +104,22 @@ public class World : MonoBehaviour
         }
 
         return blockTypes[CreateVoxel(pos)].isSolid;
+    }
+
+    public bool CheckForTransparentVoxel(Vector3 pos)
+    {
+        Vector2Int thisChunk = VoxelData.Vector3ToVector2Int(pos);
+
+        if (!IsVoxelInWorld(pos))
+        {
+            return true;
+        }
+        if (chunks[thisChunk.x, thisChunk.y] != null && chunks[thisChunk.x, thisChunk.y].IsVoxelMapPopulated)
+        {
+            return blockTypes[chunks[thisChunk.x, thisChunk.y].GetVoxelFromGlobalVector3(pos)].isTransparent;
+        }
+
+        return blockTypes[CreateVoxel(pos)].isTransparent;
     }
 
     public byte CreateVoxel(Vector3 pos)

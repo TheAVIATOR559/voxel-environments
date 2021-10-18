@@ -30,6 +30,7 @@ public class BlockType : ScriptableObject
 {
     public BlockTypes Type;
     public bool isSolid;
+    public bool isTransparent;
 
     [Header("Texture Values")]
     public int backTexture;
