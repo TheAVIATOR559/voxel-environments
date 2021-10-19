@@ -42,7 +42,7 @@ public class TiagaBiome : BiomeAttributes
 
         treeLineHeight = maxHeight - Mathf.RoundToInt(maxHeight * treeLinePercentage);//does not work properly
 
-        Debug.Log(treeLineHeight + " :: " + maxHeight + " - " + Mathf.RoundToInt(maxHeight * treeLinePercentage));
+        //Debug.Log(treeLineHeight + " :: " + maxHeight + " - " + Mathf.RoundToInt(maxHeight * treeLinePercentage));
 
         maxMuskegHeight = minHeight + Mathf.RoundToInt(minHeight * muskegChance);
         minMuskegHeight = minHeight;

@@ -87,7 +87,15 @@ public class World : MonoBehaviour
 
     public Chunk GetChunkFromVector3(Vector3 pos)
     {
-        return chunks[Mathf.FloorToInt(pos.x / VoxelData.ChunkWidth), Mathf.FloorToInt(pos.z / VoxelData.ChunkWidth)];
+        int x = Mathf.FloorToInt(pos.x / VoxelData.ChunkWidth);
+        int z = Mathf.FloorToInt(pos.z / VoxelData.ChunkWidth);
+        if (x < 0 || x >= VoxelData.WorldSizeInChunks
+            || z < 0 || z >= VoxelData.WorldSizeInChunks)
+        {
+            return null;
+        }
+
+        return chunks[x, z];
     }
 
     public bool CheckForVoxel(Vector3 pos)
@@ -116,10 +124,10 @@ public class World : MonoBehaviour
         }
         if (chunks[thisChunk.x, thisChunk.y] != null && chunks[thisChunk.x, thisChunk.y].IsVoxelMapPopulated)
         {
-            return blockTypes[chunks[thisChunk.x, thisChunk.y].GetVoxelFromGlobalVector3(pos)].isTransparent;
+            return blockTypes[chunks[thisChunk.x, thisChunk.y].GetVoxelFromGlobalVector3(pos)].renderNeighborFaces;
         }
 
-        return blockTypes[CreateVoxel(pos)].isTransparent;
+        return blockTypes[CreateVoxel(pos)].renderNeighborFaces;
     }
 
     public byte CreateVoxel(Vector3 pos)

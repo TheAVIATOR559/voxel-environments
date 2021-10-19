@@ -143,10 +143,11 @@ public class Chunk
     private void UpdateMeshData(Vector3 pos)
     {
         byte blockID = voxelMap[(int)pos.x, (int)pos.y, (int)pos.z];
-        bool isTransparent = m_world.blockTypes[blockID].isTransparent;
+        bool isTransparent = m_world.blockTypes[blockID].renderNeighborFaces;
 
         for (int i = 0; i < 6; i++)
         {
+            //if (!CheckVoxel(pos + VoxelData.faceChecks[i]))
             if (CheckVoxel(pos + VoxelData.faceChecks[i]))
             {
                 vertices.Add(pos + VoxelData.voxelVerts[VoxelData.voxelTris[i, 0]]);
@@ -167,12 +168,21 @@ public class Chunk
                 }
                 else
                 {
-                    transparentTriangles.Add(vertexIndex);
-                    transparentTriangles.Add(vertexIndex + 1);
-                    transparentTriangles.Add(vertexIndex + 2);
-                    transparentTriangles.Add(vertexIndex + 2);
-                    transparentTriangles.Add(vertexIndex + 1);
-                    transparentTriangles.Add(vertexIndex + 3);
+                    Vector3 neighbor = pos + VoxelData.faceChecks[i];
+                    Chunk chunk = m_world.GetChunkFromVector3(neighbor + Position);
+
+
+                    if (World.IsVoxelInWorld(neighbor + Position) && chunk != null 
+                        && chunk.voxelMap[(int)neighbor.x, (int)neighbor.y, (int)neighbor.z] == (byte)BlockTypes.Air) //SLIGHTLY BUSTED
+                    //if (voxelMap[(int)neighbor.x, (int)neighbor.y, (int)neighbor.z] == (byte)BlockTypes.Air)
+                    {
+                        transparentTriangles.Add(vertexIndex);
+                        transparentTriangles.Add(vertexIndex + 1);
+                        transparentTriangles.Add(vertexIndex + 2);
+                        transparentTriangles.Add(vertexIndex + 2);
+                        transparentTriangles.Add(vertexIndex + 1);
+                        transparentTriangles.Add(vertexIndex + 3);
+                    }
                 }
 
                 vertexIndex += 4;
@@ -244,10 +254,12 @@ public class Chunk
 
         if (!IsVoxelInChunk(x, y, z))
         {
+            //return m_world.CheckForVoxel(pos + Position);
             return m_world.CheckForTransparentVoxel(pos + Position);
         }
 
-        return m_world.blockTypes[voxelMap[x, y, z]].isTransparent;
+        //return m_world.blockTypes[voxelMap[x, y, z]].isSolid;
+        return m_world.blockTypes[voxelMap[x, y, z]].renderNeighborFaces;
     }
 
     private void AddTexture(int textureID)
