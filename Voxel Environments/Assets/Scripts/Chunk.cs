@@ -169,12 +169,12 @@ public class Chunk
                 else
                 {
                     Vector3 neighbor = pos + VoxelData.faceChecks[i];
-                    Chunk chunk = m_world.GetChunkFromVector3(neighbor + Position);
 
+                    //Debug.Log("TEST :: (19, 6, 21) :: TYPE " + m_world.GetVoxel(new Vector3(19, 6, 21)));
 
-                    if (World.IsVoxelInWorld(neighbor + Position) && chunk != null 
-                        && chunk.voxelMap[(int)neighbor.x, (int)neighbor.y, (int)neighbor.z] == (byte)BlockTypes.Air) //SLIGHTLY BUSTED
-                    //if (voxelMap[(int)neighbor.x, (int)neighbor.y, (int)neighbor.z] == (byte)BlockTypes.Air)
+                    Debug.Log(blockID + " :: " + neighbor + " :: " + m_world.GetVoxel(neighbor));
+
+                    if (m_world.GetVoxel(neighbor) == (byte)BlockTypes.Air)
                     {
                         transparentTriangles.Add(vertexIndex);
                         transparentTriangles.Add(vertexIndex + 1);
@@ -182,6 +182,15 @@ public class Chunk
                         transparentTriangles.Add(vertexIndex + 2);
                         transparentTriangles.Add(vertexIndex + 1);
                         transparentTriangles.Add(vertexIndex + 3);
+                    }
+                    else
+                    {
+                        triangles.Add(vertexIndex);
+                        triangles.Add(vertexIndex + 1);
+                        triangles.Add(vertexIndex + 2);
+                        triangles.Add(vertexIndex + 2);
+                        triangles.Add(vertexIndex + 1);
+                        triangles.Add(vertexIndex + 3);
                     }
                 }
 

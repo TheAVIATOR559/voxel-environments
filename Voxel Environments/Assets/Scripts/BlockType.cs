@@ -31,7 +31,6 @@ public class BlockType : ScriptableObject
     public BlockTypes Type;
     public bool isSolid;
     public bool renderNeighborFaces;
-    public float transparency;
 
     [Header("Texture Values")]
     public int backTexture;

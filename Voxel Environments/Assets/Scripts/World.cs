@@ -40,6 +40,8 @@ public class World : MonoBehaviour
         Seed = Random.Range(-1000, 1001);
 
         GenerateWorld();
+
+        
     }
 
     private void GenerateWorld()
@@ -170,5 +172,18 @@ public class World : MonoBehaviour
         {
             return false;
         }
+    }
+
+    public byte GetVoxel(Vector3 worldPos)
+    {
+        if(IsVoxelInWorld(worldPos))
+        {
+            Chunk chunk = GetChunkFromVector3(worldPos);
+            Vector3 localPosition = new Vector3(worldPos.x - (chunk.coord.x * VoxelData.ChunkWidth), worldPos.y, worldPos.z - (chunk.coord.y * VoxelData.ChunkWidth));
+            //Debug.Log(worldPos + "::" + chunk.coord + " :: " + localPosition);
+            return chunk.voxelMap[(int)localPosition.x, (int)localPosition.y, (int)localPosition.z];
+        }
+
+        return (byte)BlockTypes.Air;
     }
 }
