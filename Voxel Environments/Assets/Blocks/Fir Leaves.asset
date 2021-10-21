@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecaba1c1ae74c3e41829b66915cf20c3, type: 3}
   m_Name: Fir Leaves
   m_EditorClassIdentifier: 
-  Type: 16
+  Type: 18
   isSolid: 1
-  backTexture: 21
-  frontTexture: 21
-  topTexture: 21
-  bottomTexture: 21
-  leftTexture: 21
-  rightTexture: 21
+  renderNeighborFaces: 0
+  isChangeable: 1
+  backTexture: 22
+  frontTexture: 22
+  topTexture: 22
+  bottomTexture: 22
+  leftTexture: 22
+  rightTexture: 22

@@ -108,8 +108,11 @@ public class Chunk
         while (mods.Count > 0)
         {
             VoxelMod voxMod = mods.Dequeue();
-            Vector3 pos = voxMod.position -= Position;
-            voxelMap[(int)pos.x, (int)pos.y, (int)pos.z] = voxMod.id;
+            if(m_world.blockTypes[m_world.GetVoxel(voxMod.position)].isChangeable)
+            {
+                Vector3 pos = voxMod.position -= Position;
+                voxelMap[(int)pos.x, (int)pos.y, (int)pos.z] = voxMod.id;
+            }
         }
 
         ClearMeshData();
@@ -145,6 +148,8 @@ public class Chunk
         byte blockID = voxelMap[(int)pos.x, (int)pos.y, (int)pos.z];
         bool isTransparent = m_world.blockTypes[blockID].renderNeighborFaces;
 
+        Vector3 neighborPos = Position + pos;
+
         for (int i = 0; i < 6; i++)
         {
             //if (!CheckVoxel(pos + VoxelData.faceChecks[i]))
@@ -168,14 +173,16 @@ public class Chunk
                 }
                 else
                 {
-                    Vector3 neighbor = pos + VoxelData.faceChecks[i];
+                    byte neighborID = m_world.GetVoxel(neighborPos + VoxelData.faceChecks[i]);
+                    //Debug.Log("TEST :: (0, 0, 0) :: TYPE " + (BlockTypes)m_world.GetVoxel(new Vector3(0, 0, 0)));
 
-                    //Debug.Log("TEST :: (19, 6, 21) :: TYPE " + m_world.GetVoxel(new Vector3(19, 6, 21)));
+                    //Debug.Log((BlockTypes)blockID + " :: " + (neighborPos + VoxelData.faceChecks[i]) + " :: " + (BlockTypes)neighborID);
 
-                    Debug.Log(blockID + " :: " + neighbor + " :: " + m_world.GetVoxel(neighbor));
-
-                    if (m_world.GetVoxel(neighbor) == (byte)BlockTypes.Air)
+                    if (neighborID != (byte)BlockTypes.STRUCTURE_PLACEHOLDER
+                        && (neighborID == (byte)BlockTypes.Air
+                        || neighborID == (byte)BlockTypes.NULL))
                     {
+                        //Debug.Log("TRANSPARENT EXPECTED");
                         transparentTriangles.Add(vertexIndex);
                         transparentTriangles.Add(vertexIndex + 1);
                         transparentTriangles.Add(vertexIndex + 2);
@@ -183,7 +190,8 @@ public class Chunk
                         transparentTriangles.Add(vertexIndex + 1);
                         transparentTriangles.Add(vertexIndex + 3);
                     }
-                    else
+                    else if(neighborID != (byte)BlockTypes.STRUCTURE_PLACEHOLDER
+                        && neighborID != blockID)
                     {
                         triangles.Add(vertexIndex);
                         triangles.Add(vertexIndex + 1);

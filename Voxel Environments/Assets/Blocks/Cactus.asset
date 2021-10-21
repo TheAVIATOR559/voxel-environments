@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecaba1c1ae74c3e41829b66915cf20c3, type: 3}
   m_Name: Cactus
   m_EditorClassIdentifier: 
-  Type: 12
+  Type: 14
   isSolid: 1
-  backTexture: 9
-  frontTexture: 9
-  topTexture: 10
-  bottomTexture: 11
-  leftTexture: 9
-  rightTexture: 9
+  renderNeighborFaces: 0
+  isChangeable: 0
+  backTexture: 10
+  frontTexture: 10
+  topTexture: 11
+  bottomTexture: 12
+  leftTexture: 10
+  rightTexture: 10

@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecaba1c1ae74c3e41829b66915cf20c3, type: 3}
   m_Name: Tiaga Dirt
   m_EditorClassIdentifier: 
-  Type: 9
+  Type: 11
   isSolid: 1
-  backTexture: 14
-  frontTexture: 14
-  topTexture: 14
-  bottomTexture: 14
-  leftTexture: 14
-  rightTexture: 14
+  renderNeighborFaces: 0
+  isChangeable: 0
+  backTexture: 15
+  frontTexture: 15
+  topTexture: 15
+  bottomTexture: 15
+  leftTexture: 15
+  rightTexture: 15

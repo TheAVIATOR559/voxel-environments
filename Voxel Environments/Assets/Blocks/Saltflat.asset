@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecaba1c1ae74c3e41829b66915cf20c3, type: 3}
   m_Name: Saltflat
   m_EditorClassIdentifier: 
-  Type: 8
+  Type: 10
   isSolid: 1
-  backTexture: 7
-  frontTexture: 7
-  topTexture: 7
-  bottomTexture: 7
-  leftTexture: 7
-  rightTexture: 7
+  renderNeighborFaces: 0
+  isChangeable: 0
+  backTexture: 8
+  frontTexture: 8
+  topTexture: 8
+  bottomTexture: 8
+  leftTexture: 8
+  rightTexture: 8

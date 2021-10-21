@@ -126,4 +126,9 @@ public static class Structure
             queue.Enqueue(new VoxelMod(new Vector3Int((int)position.x, (int)position.y + i, (int)position.z), (byte)BlockTypes.Cactus));
         }
     }
+
+    public static void MakeMuskeg(Vector3 position, Queue<VoxelMod> queue)
+    {
+        queue.Enqueue(new VoxelMod(new Vector3Int((int)position.x, (int)position.y, (int)position.z), (byte)BlockTypes.Muskeg));
+    }
 }

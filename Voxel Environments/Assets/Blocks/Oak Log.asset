@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecaba1c1ae74c3e41829b66915cf20c3, type: 3}
   m_Name: Oak Log
   m_EditorClassIdentifier: 
-  Type: 13
+  Type: 15
   isSolid: 1
-  backTexture: 16
-  frontTexture: 16
-  topTexture: 17
-  bottomTexture: 17
-  leftTexture: 16
-  rightTexture: 16
+  renderNeighborFaces: 0
+  isChangeable: 0
+  backTexture: 17
+  frontTexture: 17
+  topTexture: 18
+  bottomTexture: 18
+  leftTexture: 17
+  rightTexture: 17

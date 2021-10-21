@@ -74,7 +74,7 @@ public class DesertBiome : BiomeAttributes
 
         if (!World.IsVoxelInWorld(pos))
         {
-            voxelValue = (byte)BlockTypes.Air;//empty block
+            voxelValue = (byte)BlockTypes.NULL;//empty block
         }
         else if (pos.y == 0)
         {

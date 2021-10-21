@@ -4,6 +4,8 @@ using UnityEngine;
 
 public enum BlockTypes : byte
 {
+    NULL,
+    STRUCTURE_PLACEHOLDER,
     Air,
     Bedrock,
     Stone,
@@ -31,6 +33,7 @@ public class BlockType : ScriptableObject
     public BlockTypes Type;
     public bool isSolid;
     public bool renderNeighborFaces;
+    public bool isChangeable;
 
     [Header("Texture Values")]
     public int backTexture;

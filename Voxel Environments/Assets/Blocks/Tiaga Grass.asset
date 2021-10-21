@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecaba1c1ae74c3e41829b66915cf20c3, type: 3}
   m_Name: Tiaga Grass
   m_EditorClassIdentifier: 
-  Type: 10
+  Type: 12
   isSolid: 1
-  backTexture: 12
-  frontTexture: 12
-  topTexture: 13
-  bottomTexture: 14
-  leftTexture: 12
-  rightTexture: 12
+  renderNeighborFaces: 0
+  isChangeable: 0
+  backTexture: 13
+  frontTexture: 13
+  topTexture: 14
+  bottomTexture: 15
+  leftTexture: 13
+  rightTexture: 13

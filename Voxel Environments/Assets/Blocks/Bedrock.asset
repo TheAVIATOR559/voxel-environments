@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecaba1c1ae74c3e41829b66915cf20c3, type: 3}
   m_Name: Bedrock
   m_EditorClassIdentifier: 
-  Type: 1
+  Type: 3
   isSolid: 1
-  backTexture: 0
-  frontTexture: 0
-  topTexture: 0
-  bottomTexture: 0
-  leftTexture: 0
-  rightTexture: 0
+  renderNeighborFaces: 0
+  isChangeable: 0
+  backTexture: 1
+  frontTexture: 1
+  topTexture: 1
+  bottomTexture: 1
+  leftTexture: 1
+  rightTexture: 1

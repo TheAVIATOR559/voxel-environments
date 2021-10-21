@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecaba1c1ae74c3e41829b66915cf20c3, type: 3}
   m_Name: Dirt
   m_EditorClassIdentifier: 
-  Type: 3
+  Type: 5
   isSolid: 1
-  backTexture: 2
-  frontTexture: 2
-  topTexture: 2
-  bottomTexture: 2
-  leftTexture: 2
-  rightTexture: 2
+  renderNeighborFaces: 0
+  isChangeable: 0
+  backTexture: 3
+  frontTexture: 3
+  topTexture: 3
+  bottomTexture: 3
+  leftTexture: 3
+  rightTexture: 3

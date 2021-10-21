@@ -14,7 +14,7 @@ public class World : MonoBehaviour
     private Chunk[,] chunks = new Chunk[VoxelData.WorldSizeInChunks, VoxelData.WorldSizeInChunks];
 
     public Queue<VoxelMod> modifications = new Queue<VoxelMod>();
-    [SerializeField]private List<Chunk> chunksToUpdate = new List<Chunk>();
+    [SerializeField] private List<Chunk> chunksToUpdate = new List<Chunk>();
 
     private void Awake()
     {
@@ -28,7 +28,7 @@ public class World : MonoBehaviour
         modifications.Clear();
         chunksToUpdate.Clear();
 
-        foreach(Transform child in transform)
+        foreach (Transform child in transform)
         {
             Destroy(child.gameObject);
         }
@@ -41,41 +41,41 @@ public class World : MonoBehaviour
 
         GenerateWorld();
 
-        
+
     }
 
     private void GenerateWorld()
     {
         biome.CreateBiomeHeightMap(VoxelData.WorldSizeInChunks * VoxelData.ChunkWidth, VoxelData.WorldSizeInChunks * VoxelData.ChunkWidth, Seed);
 
-        for(int x = 0; x < VoxelData.WorldSizeInChunks; x++)
+        for (int x = 0; x < VoxelData.WorldSizeInChunks; x++)
         {
-            for(int z = 0; z < VoxelData.WorldSizeInChunks; z++)
+            for (int z = 0; z < VoxelData.WorldSizeInChunks; z++)
             {
                 chunks[x, z] = new Chunk(new Vector2Int(x, z), this, true);
             }
         }
 
-        while(modifications.Count > 0)
+        while (modifications.Count > 0)
         {
             VoxelMod voxMod = modifications.Dequeue();
 
             Vector2Int chunkCoord = GetChunkCoordFromVector3(voxMod.position);
             //Debug.Log(chunkCoord);
-            if(chunks[chunkCoord.x, chunkCoord.y] == null)
+            if (chunks[chunkCoord.x, chunkCoord.y] == null)
             {
                 chunks[chunkCoord.x, chunkCoord.y] = new Chunk(chunkCoord, this, true);
             }
 
             chunks[chunkCoord.x, chunkCoord.y].mods.Enqueue(voxMod);
 
-            if(!chunksToUpdate.Contains(chunks[chunkCoord.x, chunkCoord.y]))
+            if (!chunksToUpdate.Contains(chunks[chunkCoord.x, chunkCoord.y]))
             {
                 chunksToUpdate.Add(chunks[chunkCoord.x, chunkCoord.y]);
             }
         }
 
-        foreach(Chunk chunk in chunksToUpdate)
+        foreach (Chunk chunk in chunksToUpdate)
         {
             chunk.UpdateChunk();
         }
@@ -104,7 +104,7 @@ public class World : MonoBehaviour
     {
         Vector2Int thisChunk = VoxelData.Vector3ToVector2Int(pos);
 
-        if(!IsVoxelInWorld(pos))
+        if (!IsVoxelInWorld(pos))
         {
             return false;
         }
@@ -176,14 +176,17 @@ public class World : MonoBehaviour
 
     public byte GetVoxel(Vector3 worldPos)
     {
-        if(IsVoxelInWorld(worldPos))
+        if (IsVoxelInWorld(worldPos))
         {
             Chunk chunk = GetChunkFromVector3(worldPos);
-            Vector3 localPosition = new Vector3(worldPos.x - (chunk.coord.x * VoxelData.ChunkWidth), worldPos.y, worldPos.z - (chunk.coord.y * VoxelData.ChunkWidth));
-            //Debug.Log(worldPos + "::" + chunk.coord + " :: " + localPosition);
-            return chunk.voxelMap[(int)localPosition.x, (int)localPosition.y, (int)localPosition.z];
+            if (chunk != null)
+            {
+                Vector3 localPosition = new Vector3(worldPos.x - (chunk.coord.x * VoxelData.ChunkWidth), worldPos.y, worldPos.z - (chunk.coord.y * VoxelData.ChunkWidth));
+                //Debug.Log(worldPos + "::" + chunk.coord + " :: " + localPosition);
+                return chunk.voxelMap[(int)localPosition.x, (int)localPosition.y, (int)localPosition.z];
+            }
         }
 
-        return (byte)BlockTypes.Air;
+        return (byte)BlockTypes.NULL;
     }
 }

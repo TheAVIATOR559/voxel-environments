@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecaba1c1ae74c3e41829b66915cf20c3, type: 3}
   m_Name: Fir Log
   m_EditorClassIdentifier: 
-  Type: 14
+  Type: 16
   isSolid: 1
-  backTexture: 18
-  frontTexture: 18
-  topTexture: 19
-  bottomTexture: 19
-  leftTexture: 18
-  rightTexture: 18
+  renderNeighborFaces: 0
+  isChangeable: 0
+  backTexture: 19
+  frontTexture: 19
+  topTexture: 20
+  bottomTexture: 20
+  leftTexture: 19
+  rightTexture: 19
