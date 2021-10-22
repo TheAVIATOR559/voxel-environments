@@ -10,6 +10,9 @@ public class DesertBiome : BiomeAttributes
     [Tooltip("Vertical offset height for a mesa")] public int mesaHeight = 0;
     [Tooltip("Number of blocks vertically the mesa bleeds out to")] public int mesaBleedOff = 1;
     [Tooltip("Percent height minimum of a playa")] public float playaChance = 0;
+    [Tooltip("Percent chance of a barrel cactus")] public float barrelCactusChance = 0.15f;
+    [Tooltip("Percent chance of a saguaro cactus")] public float saguaroCactusChance = 0.2f;
+    [Tooltip("Percent chance of a crazy cactus")] public float crazyCactusChance = 0.05f;
     private int minMesaHeight = 0;
     private int maxPlayaHeight = 0;
     private int minPlayaHeight = 0;
@@ -115,7 +118,7 @@ public class DesertBiome : BiomeAttributes
             {
                 if (Noise.Get2DPerlin(new Vector2(pos.x, pos.z), -seed, treePlacementScale) > treePlacementThreshold)
                 {
-                    Structure.MakeCactus(pos, m_world.modifications, minTreeHeight, maxTreeHeight);
+                    Structure.MakeCactus(pos, m_world.modifications, minTreeHeight, maxTreeHeight, barrelCactusChance, saguaroCactusChance, crazyCactusChance);
                 }
             }
         }

@@ -110,7 +110,7 @@ public class Chunk
             VoxelMod voxMod = mods.Dequeue();
             if(m_world.blockTypes[m_world.GetVoxel(voxMod.position)].isChangeable)
             {
-                Vector3 pos = voxMod.position -= Position;
+                Vector3 pos = voxMod.position - Position;
                 voxelMap[(int)pos.x, (int)pos.y, (int)pos.z] = voxMod.id;
             }
         }

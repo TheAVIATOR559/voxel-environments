@@ -61,7 +61,13 @@ public class World : MonoBehaviour
             VoxelMod voxMod = modifications.Dequeue();
 
             Vector2Int chunkCoord = GetChunkCoordFromVector3(voxMod.position);
-            //Debug.Log(chunkCoord);
+            //Debug.Log(chunkCoord + "::" + voxMod.position);
+
+            //if(!IsChunkInWorld(chunkCoord))
+            //{
+            //    continue;
+            //}
+
             if (chunks[chunkCoord.x, chunkCoord.y] == null)
             {
                 chunks[chunkCoord.x, chunkCoord.y] = new Chunk(chunkCoord, this, true);

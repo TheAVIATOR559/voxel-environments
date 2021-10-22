@@ -22,9 +22,12 @@ MonoBehaviour:
   treeZoneThreshold: 0.6
   treePlacementScale: 15
   treePlacementThreshold: 0.8
-  maxTreeHeight: 12
-  minTreeHeight: 2
+  maxTreeHeight: 15
+  minTreeHeight: 5
   mesaChance: 0.1
   mesaHeight: 10
   mesaBleedOff: 1
   playaChance: 0.1
+  barrelCactusChance: 0.25
+  saguaroCactusChance: 0.1
+  crazyCactusChance: 0.05
