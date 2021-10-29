@@ -6,9 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Loading.unity
+    path: Assets/Scenes/Main Menu.unity
+    guid: 21910c86a0c828f41afab3ed41a9b151
+  - enabled: 1
+    path: Assets/Scenes/Loading Desert.unity
     guid: 6bd52827299fc564eac7a92701a40520
   - enabled: 1
-    path: Assets/Scenes/Level.unity
+    path: Assets/Scenes/Desert.unity
     guid: 667521f637dcee04f98755c7ee568f78
+  - enabled: 1
+    path: Assets/Scenes/Loading Boreal.unity
+    guid: dd9960b93858ee64084801a9c5fecd24
+  - enabled: 1
+    path: Assets/Scenes/Boreal.unity
+    guid: e304383bd644da44daacffe089ad67ed
+  - enabled: 1
+    path: Assets/Scenes/Loading Decidous.unity
+    guid: b4fb369b2cc90954c8a8476bb882593b
+  - enabled: 1
+    path: Assets/Scenes/Decidous.unity
+    guid: bc4361a5b525bca4394440876dac004e
   m_configObjects: {}

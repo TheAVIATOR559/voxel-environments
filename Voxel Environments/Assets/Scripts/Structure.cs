@@ -110,9 +110,10 @@ public static class Structure
         }
     }
 
-    public static void MakeCactus(Vector3 position, Queue<VoxelMod> queue,  int minCactusHeight, int maxCactusHeight, float barrelCactusChance, float saguaroCactusChance, float crazyCactusChance)
+    public static void MakeCactus(Vector3 position, Queue<VoxelMod> queue,  int minCactusHeight, int maxCactusHeight, float barrelCactusChance, float saguaroCactusChance)
     {
-        float result = Random.Range(0, barrelCactusChance + saguaroCactusChance + crazyCactusChance);
+        float result = Random.Range(0, barrelCactusChance + saguaroCactusChance + 0.2f);
+        //Debug.Log(result);
 
         if(result <= barrelCactusChance)
         {
@@ -121,10 +122,6 @@ public static class Structure
         else if(result > barrelCactusChance && result <= barrelCactusChance + saguaroCactusChance)
         {
             MakeSaguaroCactus(position, queue, minCactusHeight, maxCactusHeight);
-        }
-        else if(result > saguaroCactusChance + barrelCactusChance && result <= barrelCactusChance + saguaroCactusChance + crazyCactusChance)
-        {
-            //MakeCrazyCactus(position, queue, minCactusHeight, maxCactusHeight);
         }
         else
         {
