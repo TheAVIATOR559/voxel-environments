@@ -20,6 +20,7 @@ public static class Structure
             queue.Enqueue(new VoxelMod(new Vector3Int((int)position.x, (int)position.y + i, (int)position.z), (byte)BlockTypes.Oak_Log));
         }
 
+
         for (int x = -3; x < 4; x++)
         {
             for (int y = 0; y < 7; y++)
@@ -27,17 +28,19 @@ public static class Structure
                 for (int z = -3; z < 4; z++)
                 {
                     if ((int)position.x + x >= VoxelData.WorldSizeInVoxels || (int)position.z + z >= VoxelData.WorldSizeInVoxels
-                        || (int)position.x + x < 0 || (int)position.z + z < 0)//checking the upper bound but not the lower bound
+                        || (int)position.x + x < 0 || (int)position.z + z < 0)
                     {
                         continue;
                     }
 
-                    if(x == 0 && z == 0)
+                    if(x == 0 && z == 0 && y < 6)
                     {
-                        continue;
+                        queue.Enqueue(new VoxelMod(new Vector3Int((int)position.x, (int)position.y + height + y, (int)position.z), (byte)BlockTypes.Oak_Log));
                     }
-
-                    queue.Enqueue(new VoxelMod(new Vector3Int((int)position.x + x, (int)position.y + height + y, (int)position.z + z), (byte)BlockTypes.Oak_Leaves));
+                    else
+                    {
+                        //queue.Enqueue(new VoxelMod(new Vector3Int((int)position.x + x, (int)position.y + height + y, (int)position.z + z), (byte)BlockTypes.Oak_Leaves));
+                    }
                 }
             }
         }

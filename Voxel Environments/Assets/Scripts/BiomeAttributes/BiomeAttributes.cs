@@ -85,7 +85,7 @@ public class BiomeAttributes : ScriptableObject
         return voxelValue;
     }
 
-    public void SetUpReferences(World world)
+    public virtual void SetUpReferences(World world)
     {
         m_world = world;
     }
