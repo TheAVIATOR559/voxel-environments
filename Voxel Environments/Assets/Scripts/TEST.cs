@@ -7,8 +7,6 @@ public class TEST : MonoBehaviour
 {
 	Texture2D texture;
 
-	VoronoiNoise noise;
-
 	private void Awake()
 	{
 		//noise = new VoronoiNoise(100, 4, 1);
@@ -20,10 +18,12 @@ public class TEST : MonoBehaviour
 
 	private void FillTexture()
 	{
-		int pointCount = 10;
+		int pointCount = 1;
 		List<Vector2Int> points = new List<Vector2Int>();
+		int radius = 10;
+		int threshold = radius * radius;
 
-		while(points.Count <= pointCount)
+		while(points.Count < pointCount)
         {
 			Vector2Int point = new Vector2Int(Random.Range(0, 101), Random.Range(0, 101));
 
@@ -37,32 +37,67 @@ public class TEST : MonoBehaviour
 		{
 			for (int x = 0; x < 100; x++)
 			{
-				//float value = noise.Sample2D(x, y);
-				texture.SetPixel(x, y, Color.black);
+				float value = Random.Range(0, 1f);
+                texture.SetPixel(x, y, new Color(value,value,value));
 			}
 		}
 
-		foreach(Vector2Int point in points)
-        {
-			
-			for(int x = -3; x < 4; x++)
-            {
-				for(int y = -3; y < 4; y++)
-                {
-					if((x <= 1 && x >= -1) && (y <= 1 && y >= -1))
-                    {
+		foreach (Vector2Int point in points)
+		{
+			for (int x = -radius; x < radius; x++)
+			{
+				for (int y = -radius; y < radius; y++)
+				{
+					int value = x * x + y * y;
+
+					if (x == 0 && y == 0)
+					{
+						texture.SetPixel(point.x, point.y, Color.green);
+					}
+					else if (value <= 1)
+					{
 						texture.SetPixel(point.x + x, point.y + y, Color.red);
 					}
-					else
-                    {
+					else if (value >= 1 && value < 9)
+					{
 						texture.SetPixel(point.x + x, point.y + y, Color.blue);
 					}
-                }
-            }
+					else if (value >= 9 && value < 100)
+					{
+						texture.SetPixel(point.x + x, point.y + y, Color.grey);
+					}
+				}
+			}
+			//for (int i = -radius; i < radius; i++)
+			//         {
+			//	for(int j = -radius; j < radius; j++)
+			//             {
+			//		if(i*i + j*j < threshold)
+			//                 {
+			//			texture.SetPixel(point.x + i, point.y + j, Color.grey);
+			//		}
+			//             }
+			//         }
 
-			texture.SetPixel(point.x, point.y, Color.green);
-        }			
+			//for(int x = -3; x < 4; x++)
+			//         {
+			//	for(int y = -3; y < 4; y++)
+			//             {
+			//		if((x <= 1 && x >= -1) && (y <= 1 && y >= -1))
+			//                 {
+			//			texture.SetPixel(point.x + x, point.y + y, Color.red);
+			//		}
+			//		else
+			//                 {
+			//			texture.SetPixel(point.x + x, point.y + y, Color.blue);
+			//		}
+			//             }
+			//         }
 
-		texture.Apply();
+			//texture.SetPixel(point.x, point.y, Color.green);
+			//     }			
+
+			texture.Apply();
+		}
 	}
 }

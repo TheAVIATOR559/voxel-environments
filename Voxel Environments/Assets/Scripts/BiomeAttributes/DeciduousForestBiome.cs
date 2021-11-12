@@ -6,24 +6,32 @@ using UnityEngine;
 public class DeciduousForestBiome : BiomeAttributes
 {
     private int[,] biomassMap;
-    VoronoiNoise voroNoise;
 
-    [Tooltip("I DONT KNOW")] public float frequency = 0.2f;
-    [Tooltip("I DONT KNOW")] public float amplitude = 1f;
-
-    public override void SetUpReferences(World world)
-    {
-        voroNoise = new VoronoiNoise(world.Seed, frequency, amplitude);
-
-        base.SetUpReferences(world);
-    }
+    [Tooltip("Initial Number of Trees")] public int InitialTreeCount = 10;
+    [Tooltip("Resource Depletion Radius")] public int TreeDepletionRadius = 10;
+    [Tooltip("Resource Depletion Amount")] public int TreeDepletionValue = 25;
+    [Tooltip("Resource Canopy Radius")] public int TreeCanopyRadius = 3;
+    [Tooltip("Resource Canopy Amount")] public int TreeCanopyValue = 35;
+    [Tooltip("Neighbor Radius")] public int TreeNeighborRadius = 1;
+    [Tooltip("Neighbor Resource Amount")] public int TreeNeighborValue = 50;
 
     public override void CreateBiomeHeightMap(int mapWidth, int mapHeight, int seed)
     {
         base.CreateBiomeHeightMap(mapWidth, mapHeight, seed);
 
         CreateBiomassMap();
-        CalculateTreePlacement();
+
+        int treeCount = 0;
+
+        while(treeCount <= InitialTreeCount)
+        {
+            //Debug.Log(treeCount);
+            if(CalcTreePosition(new Vector2Int(Random.Range(0, VoxelData.WorldSizeInVoxels), Random.Range(0, VoxelData.WorldSizeInVoxels))))
+            {
+                treeCount++;
+            }
+        }
+
     }
 
     public override byte CreateBiomeSpecificVoxel(Vector3Int pos, int seed)
@@ -60,15 +68,10 @@ public class DeciduousForestBiome : BiomeAttributes
         }
 
         //tree pass
-        if (pos.y == heightMap[pos.x, pos.z])
+        if (pos.y == heightMap[pos.x, pos.z] && biomassMap[pos.x, pos.z] == -1)
         {
-            if (Noise.Get2DPerlin(new Vector2(pos.x, pos.z), -seed, treeZoneScale) > treeZoneThreshold)
-            {
-                if (Noise.Get2DPerlin(new Vector2(pos.x, pos.z), -seed, treePlacementScale) > treePlacementThreshold)
-                {
-                    Structure.MakeOakTree(pos, m_world.modifications, minTreeHeight, maxTreeHeight);
-                }
-            }
+            Debug.Log("Making Tree");
+            Structure.MakeOakTree(pos, m_world.modifications, minTreeHeight, maxTreeHeight);
         }
 
         return voxelValue;
@@ -78,37 +81,88 @@ public class DeciduousForestBiome : BiomeAttributes
     {
         biomassMap = new int[VoxelData.WorldSizeInVoxels, VoxelData.WorldSizeInVoxels];
 
-        int maxValue = int.MinValue;
-        int minValue = int.MaxValue;
-
         for(int x = 0; x < VoxelData.WorldSizeInVoxels; x++)
         {
             for(int y = 0; y < VoxelData.WorldSizeInVoxels; y++)
             {
-                biomassMap[x,y] = (int)(100 * voroNoise.Sample2D(x,y));
-                
-                if(biomassMap[x,y] > maxValue)
-                {
-                    maxValue = biomassMap[x, y];
-                }
-                if(biomassMap[x,y] < minValue)
-                {
-                    minValue = biomassMap[x, y];
-                }
-
+                biomassMap[x, y] = Random.Range(0, 100);
             }
         }
-
-        Debug.Log(minValue + "::" + maxValue);
     }
 
-    private void UpdateBiomassMap()
+    private void UpdateBiomassMap(Vector2Int treePoint)
     {
+        if(biomassMap[treePoint.x, treePoint.y] <= 0)
+        {
+            return;
+        }
+        //Debug.Log(treePoint);
+        int depletionThreshold = TreeDepletionRadius * TreeDepletionRadius;
+        int canopyThreshold = TreeCanopyRadius * TreeCanopyRadius;
+        int neighborThreshold = TreeNeighborRadius * TreeNeighborRadius;
 
+        for (int x = -TreeDepletionRadius; x < TreeDepletionRadius; x++)
+        {
+            for (int y = -TreeDepletionRadius; y < TreeDepletionRadius; y++)
+            {
+                if(treePoint.x + x < 0 || treePoint.x + x >= VoxelData.WorldSizeInVoxels
+                    || treePoint.y + y < 0 || treePoint.y + y >= VoxelData.WorldSizeInVoxels)
+                {
+                    continue;
+                }
+
+                int value = x * x + y * y;
+
+                if (x == 0 && y == 0)
+                {
+                    biomassMap[treePoint.x + x, treePoint.y + y] = -1;
+                }
+                else if(value <= neighborThreshold)
+                {
+                    if(biomassMap[treePoint.x + x, treePoint.y + y] - TreeNeighborValue < 0)
+                    {
+                        biomassMap[treePoint.x + x, treePoint.y + y] = 0;
+                    }
+                    else
+                    {
+                        biomassMap[treePoint.x + x, treePoint.y + y] -= TreeNeighborValue;
+                    }
+                }
+                else if(value >= neighborThreshold && value < canopyThreshold)
+                {
+                    if (biomassMap[treePoint.x + x, treePoint.y + y] - TreeCanopyValue < 0)
+                    {
+                        biomassMap[treePoint.x + x, treePoint.y + y] = 0;
+                    }
+                    else
+                    {
+                        biomassMap[treePoint.x + x, treePoint.y + y] -= TreeCanopyValue;
+                    }
+                }
+                else if(value >= canopyThreshold && value < depletionThreshold)
+                {
+                    //Debug.Log((treePoint.x + x) + "::" + (treePoint.y + y));
+                    if (biomassMap[treePoint.x + x, treePoint.y + y] - TreeDepletionValue < 0)
+                    {
+                        biomassMap[treePoint.x + x, treePoint.y + y] = 0;
+                    }
+                    else
+                    {
+                        biomassMap[treePoint.x + x, treePoint.y + y] -= TreeDepletionValue;
+                    }
+                }
+            }
+        }
     }
 
-    private void CalculateTreePlacement()
+    private bool CalcTreePosition(Vector2Int treePoint)
     {
+        if(biomassMap[treePoint.x, treePoint.y] > 0)
+        {
+            UpdateBiomassMap(treePoint);
+            return true;
+        }
 
+        return false;
     }
 }
