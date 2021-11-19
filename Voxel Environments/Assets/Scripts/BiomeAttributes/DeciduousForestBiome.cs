@@ -7,6 +7,7 @@ public class DeciduousForestBiome : BiomeAttributes
 {
     private int[,] biomassMap;
 
+    [Tooltip("Minumum Tree Biomass")] public int TreeThreshold = 35;
     [Tooltip("Initial Number of Trees")] public int InitialTreeCount = 10;
     [Tooltip("Resource Depletion Radius")] public int TreeDepletionRadius = 10;
     [Tooltip("Resource Depletion Amount")] public int TreeDepletionValue = 25;
@@ -14,6 +15,9 @@ public class DeciduousForestBiome : BiomeAttributes
     [Tooltip("Resource Canopy Amount")] public int TreeCanopyValue = 35;
     [Tooltip("Neighbor Radius")] public int TreeNeighborRadius = 1;
     [Tooltip("Neighbor Resource Amount")] public int TreeNeighborValue = 50;
+    [Tooltip("Minimum Average Biomass Needed")] public int MinAverageBiomass = 35;
+
+    private int averageBiomass = 0;
 
     public override void CreateBiomeHeightMap(int mapWidth, int mapHeight, int seed)
     {
@@ -31,7 +35,18 @@ public class DeciduousForestBiome : BiomeAttributes
                 treeCount++;
             }
         }
+        Debug.Log(averageBiomass);
 
+        for (int x = 0; x < VoxelData.WorldSizeInVoxels; x++)
+        {
+            for(int y = 0; y < VoxelData.WorldSizeInVoxels; y++)
+            {
+                if(averageBiomass > MinAverageBiomass)
+                {
+                    CalcTreePosition(new Vector2Int(x, y));
+                }
+            }
+        }
     }
 
     public override byte CreateBiomeSpecificVoxel(Vector3Int pos, int seed)
@@ -70,7 +85,7 @@ public class DeciduousForestBiome : BiomeAttributes
         //tree pass
         if (pos.y == heightMap[pos.x, pos.z] && biomassMap[pos.x, pos.z] == -1)
         {
-            Debug.Log("Making Tree");
+            //Debug.Log("Making Tree");
             Structure.MakeOakTree(pos, m_world.modifications, minTreeHeight, maxTreeHeight);
         }
 
@@ -86,8 +101,11 @@ public class DeciduousForestBiome : BiomeAttributes
             for(int y = 0; y < VoxelData.WorldSizeInVoxels; y++)
             {
                 biomassMap[x, y] = Random.Range(0, 100);
+                averageBiomass += biomassMap[x, y];
             }
         }
+
+        averageBiomass /= (VoxelData.WorldSizeInVoxels * VoxelData.WorldSizeInVoxels);
     }
 
     private void UpdateBiomassMap(Vector2Int treePoint)
@@ -157,7 +175,7 @@ public class DeciduousForestBiome : BiomeAttributes
 
     private bool CalcTreePosition(Vector2Int treePoint)
     {
-        if(biomassMap[treePoint.x, treePoint.y] > 0)
+        if(biomassMap[treePoint.x, treePoint.y] > TreeThreshold)
         {
             UpdateBiomassMap(treePoint);
             return true;
