@@ -15,9 +15,6 @@ public class DeciduousForestBiome : BiomeAttributes
     [Tooltip("Resource Canopy Amount")] public int TreeCanopyValue = 35;
     [Tooltip("Neighbor Radius")] public int TreeNeighborRadius = 1;
     [Tooltip("Neighbor Resource Amount")] public int TreeNeighborValue = 50;
-    [Tooltip("Minimum Average Biomass Needed")] public int MinAverageBiomass = 35;
-
-    private int averageBiomass = 0;
 
     public override void CreateBiomeHeightMap(int mapWidth, int mapHeight, int seed)
     {
@@ -27,26 +24,34 @@ public class DeciduousForestBiome : BiomeAttributes
 
         int treeCount = 0;
 
-        while(treeCount <= InitialTreeCount)
+        List<Vector2Int> initTreeList = new List<Vector2Int>();
+
+        for(int i = 0; i < InitialTreeCount; i++)
         {
-            //Debug.Log(treeCount);
-            if(CalcTreePosition(new Vector2Int(Random.Range(0, VoxelData.WorldSizeInVoxels), Random.Range(0, VoxelData.WorldSizeInVoxels))))
+            Vector2Int point = new Vector2Int(Random.Range(0, VoxelData.WorldSizeInVoxels), Random.Range(0, VoxelData.WorldSizeInVoxels));
+
+            while (initTreeList.Contains(point))
             {
-                treeCount++;
+                point = new Vector2Int(Random.Range(0, VoxelData.WorldSizeInVoxels), Random.Range(0, VoxelData.WorldSizeInVoxels));
             }
+
+            initTreeList.Add(point);
+
+            UpdateBiomassMap(point);
         }
-        Debug.Log(averageBiomass);
 
         for (int x = 0; x < VoxelData.WorldSizeInVoxels; x++)
         {
-            for(int y = 0; y < VoxelData.WorldSizeInVoxels; y++)
+            for (int y = 0; y < VoxelData.WorldSizeInVoxels; y++)
             {
-                if(averageBiomass > MinAverageBiomass)
+                if(CalcTreePosition(new Vector2Int(x, y)))
                 {
-                    CalcTreePosition(new Vector2Int(x, y));
+                    treeCount++;
                 }
             }
         }
+
+        Debug.Log(treeCount);
     }
 
     public override byte CreateBiomeSpecificVoxel(Vector3Int pos, int seed)
@@ -101,11 +106,8 @@ public class DeciduousForestBiome : BiomeAttributes
             for(int y = 0; y < VoxelData.WorldSizeInVoxels; y++)
             {
                 biomassMap[x, y] = Random.Range(0, 100);
-                averageBiomass += biomassMap[x, y];
             }
         }
-
-        averageBiomass /= (VoxelData.WorldSizeInVoxels * VoxelData.WorldSizeInVoxels);
     }
 
     private void UpdateBiomassMap(Vector2Int treePoint)
@@ -124,7 +126,8 @@ public class DeciduousForestBiome : BiomeAttributes
             for (int y = -TreeDepletionRadius; y < TreeDepletionRadius; y++)
             {
                 if(treePoint.x + x < 0 || treePoint.x + x >= VoxelData.WorldSizeInVoxels
-                    || treePoint.y + y < 0 || treePoint.y + y >= VoxelData.WorldSizeInVoxels)
+                    || treePoint.y + y < 0 || treePoint.y + y >= VoxelData.WorldSizeInVoxels
+                    || biomassMap[treePoint.x + x, treePoint.y + y] == -1)
                 {
                     continue;
                 }
@@ -137,7 +140,7 @@ public class DeciduousForestBiome : BiomeAttributes
                 }
                 else if(value <= neighborThreshold)
                 {
-                    if(biomassMap[treePoint.x + x, treePoint.y + y] - TreeNeighborValue < 0)
+                    if (biomassMap[treePoint.x + x, treePoint.y + y] - TreeNeighborValue < 0)
                     {
                         biomassMap[treePoint.x + x, treePoint.y + y] = 0;
                     }
@@ -159,7 +162,6 @@ public class DeciduousForestBiome : BiomeAttributes
                 }
                 else if(value >= canopyThreshold && value < depletionThreshold)
                 {
-                    //Debug.Log((treePoint.x + x) + "::" + (treePoint.y + y));
                     if (biomassMap[treePoint.x + x, treePoint.y + y] - TreeDepletionValue < 0)
                     {
                         biomassMap[treePoint.x + x, treePoint.y + y] = 0;

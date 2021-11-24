@@ -39,7 +39,7 @@ public static class Structure
                     }
                     else
                     {
-                        //queue.Enqueue(new VoxelMod(new Vector3Int((int)position.x + x, (int)position.y + height + y, (int)position.z + z), (byte)BlockTypes.Oak_Leaves));
+                        queue.Enqueue(new VoxelMod(new Vector3Int((int)position.x + x, (int)position.y + height + y, (int)position.z + z), (byte)BlockTypes.Oak_Leaves));
                     }
                 }
             }

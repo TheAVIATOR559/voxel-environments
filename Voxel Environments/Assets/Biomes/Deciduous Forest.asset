@@ -24,5 +24,11 @@ MonoBehaviour:
   treePlacementThreshold: 0.8
   maxTreeHeight: 12
   minTreeHeight: 5
-  frequency: 1
-  amplitude: 1
+  TreeThreshold: 35
+  InitialTreeCount: 10
+  TreeDepletionRadius: 10
+  TreeDepletionValue: 35
+  TreeCanopyRadius: 3
+  TreeCanopyValue: 50
+  TreeNeighborRadius: 1
+  TreeNeighborValue: 75

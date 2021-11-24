@@ -5,99 +5,84 @@ using UnityEngine;
 
 public class TEST : MonoBehaviour
 {
-	Texture2D texture;
+    Texture2D texture;
 
-	private void Awake()
-	{
-		//noise = new VoronoiNoise(100, 4, 1);
-		texture = new Texture2D(100, 100, TextureFormat.ARGB32, true);
-		texture.name = "Procedural Texture";
-		GetComponent<MeshRenderer>().material.mainTexture = texture;
-		FillTexture();
-	}
+    private void Awake()
+    {
+        //noise = new VoronoiNoise(100, 4, 1);
+        texture = new Texture2D(100, 100, TextureFormat.ARGB32, true);
+        texture.name = "Procedural Texture";
+        GetComponent<MeshRenderer>().material.mainTexture = texture;
+        FillTexture();
+    }
 
-	private void FillTexture()
-	{
-		int pointCount = 1;
-		List<Vector2Int> points = new List<Vector2Int>();
-		int radius = 10;
-		int threshold = radius * radius;
+    private void FillTexture()
+    {
+        int pointCount = 1;
+        List<Vector2Int> points = new List<Vector2Int>();
+        int radius = 10;
+        int threshold = radius * radius;
+        int TreeDepletionRadius = 15;
+        int TreeCanopyRadius = 3;
+        int TreeNeighborRadius = 1;
 
-		while(points.Count < pointCount)
+        while (points.Count < pointCount)
         {
-			Vector2Int point = new Vector2Int(Random.Range(0, 101), Random.Range(0, 101));
+            Vector2Int point = new Vector2Int(50,50);
 
-			if(!points.Contains(point))
+            if (!points.Contains(point))
             {
-				points.Add(point);
+                points.Add(point);
             }
         }
 
-		for (int y = 0; y < 100; y++)
-		{
-			for (int x = 0; x < 100; x++)
-			{
-				float value = Random.Range(0, 1f);
-                texture.SetPixel(x, y, new Color(value,value,value));
-			}
-		}
+        for (int y = 0; y < 100; y++)
+        {
+            for (int x = 0; x < 100; x++)
+            {
+                float value = Random.Range(0, 1f);
+                texture.SetPixel(x, y, new Color(value, value, value));
+            }
+        }
 
-		foreach (Vector2Int point in points)
-		{
-			for (int x = -radius; x < radius; x++)
-			{
-				for (int y = -radius; y < radius; y++)
-				{
-					int value = x * x + y * y;
+        foreach (Vector2Int point in points)
+        {
+            int depletionThreshold = TreeDepletionRadius * TreeDepletionRadius;
+            int canopyThreshold = TreeCanopyRadius * TreeCanopyRadius;
+            int neighborThreshold = TreeNeighborRadius * TreeNeighborRadius;
 
-					if (x == 0 && y == 0)
-					{
-						texture.SetPixel(point.x, point.y, Color.green);
-					}
-					else if (value <= 1)
-					{
-						texture.SetPixel(point.x + x, point.y + y, Color.red);
-					}
-					else if (value >= 1 && value < 9)
-					{
-						texture.SetPixel(point.x + x, point.y + y, Color.blue);
-					}
-					else if (value >= 9 && value < 100)
-					{
-						texture.SetPixel(point.x + x, point.y + y, Color.grey);
-					}
-				}
-			}
-			//for (int i = -radius; i < radius; i++)
-			//         {
-			//	for(int j = -radius; j < radius; j++)
-			//             {
-			//		if(i*i + j*j < threshold)
-			//                 {
-			//			texture.SetPixel(point.x + i, point.y + j, Color.grey);
-			//		}
-			//             }
-			//         }
+            for (int x = -TreeDepletionRadius; x < TreeDepletionRadius; x++)
+            {
+                for (int y = -TreeDepletionRadius; y < TreeDepletionRadius; y++)
+                {
+                    if (point.x + x < 0 || point.x + x >= VoxelData.WorldSizeInVoxels
+                        || point.y + y < 0 || point.y + y >= VoxelData.WorldSizeInVoxels)
+                    {
+                        continue;
+                    }
 
-			//for(int x = -3; x < 4; x++)
-			//         {
-			//	for(int y = -3; y < 4; y++)
-			//             {
-			//		if((x <= 1 && x >= -1) && (y <= 1 && y >= -1))
-			//                 {
-			//			texture.SetPixel(point.x + x, point.y + y, Color.red);
-			//		}
-			//		else
-			//                 {
-			//			texture.SetPixel(point.x + x, point.y + y, Color.blue);
-			//		}
-			//             }
-			//         }
+                    int value = x * x + y * y;
 
-			//texture.SetPixel(point.x, point.y, Color.green);
-			//     }			
+                    if (x == 0 && y == 0)
+                    {
+                        texture.SetPixel(x, y, Color.red);
+                    }
+                    else if (value <= neighborThreshold)
+                    {
+                        texture.SetPixel(x, y, Color.blue);
+                    }
+                    else if (value >= neighborThreshold && value < canopyThreshold)
+                    {
+                        texture.SetPixel(x, y, Color.green);
+                    }
+                    else if (value >= canopyThreshold && value < depletionThreshold)
+                    {
+                        texture.SetPixel(x, y, Color.yellow);
+                    }
+                }
+            }
+        }
 
-			texture.Apply();
-		}
-	}
+        texture.Apply();
+    }
 }
