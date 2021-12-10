@@ -10,7 +10,6 @@ public class TiagaBiome : BiomeAttributes
     [Header("Tiaga Specific")]
     public float treeLinePercentage = 0.15f;
     public float muskegChance = 0.1f;
-    public float riverChance = 0.1f;
 
     private int treeLineHeight;
     private int maxMuskegHeight;
